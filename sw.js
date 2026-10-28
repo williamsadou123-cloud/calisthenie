@@ -10,6 +10,8 @@ const ASSETS = [
   'js/figures.js',
   'js/timer.js',
   'js/storage.js',
+  'js/dom.js',
+  'js/feedback.js',
   'js/views/aujourdhui.js',
   'js/views/seance.js',
   'js/views/exercices.js',

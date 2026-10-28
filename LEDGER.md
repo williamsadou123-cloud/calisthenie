@@ -10,3 +10,7 @@ Task 3: complete (npm test → 43/43 pass; CLE_PROFIL limite le calibrage aux ex
 Task 3: Ruling: buildSession dédoublonne par exerciceId (deux exos peuvent avoir le même substitut) et écarte un bloc sans substitut valide — coût: séance un peu plus courte
 Task 4: complete (npm test → 52/52 pass; backend IndexedDB vérifié seulement dans le navigateur, tâche 5)
 Task 4: Ruling: importAll re-valide avant d écrire et replaceAll remplace tout — coût: un import écrase l historique actuel (confirmation côté UI, tâche 8)
+Task 5: complete (vérifié navigateur intégré: test de départ, profil en IndexedDB, changement de lieu; npm test 52/52)
+Task 6: complete (vérifié navigateur: séance complète, arrêt partiel enregistré terminee=false, chrono, wakeLock/vibrate supprimés; bug corrigé: startSession réinitialise ctx.run)
+Task 6: Ruling: la recommandation "variante plus dure" est affichée seulement, non appliquée automatiquement au programme (spec: "l appli propose") — coût: changer de variante se fait à la main
+Task 5: note: le service worker ne s enregistre pas dans le navigateur intégré ("error fetching the script"), à retester en T9
