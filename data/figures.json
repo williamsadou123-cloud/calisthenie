@@ -1,1 +1,217 @@
-[]
+[
+ {
+  "id": "handstand",
+  "nom": "Équilibre sur les mains",
+  "description": "Du mur jusqu'à la tenue libre.",
+  "paliers": [
+   {
+    "id": "hs-dos-mur",
+    "nom": "Dos au mur",
+    "exerciceId": "handstand-dos-mur",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "hs-ventre-mur",
+    "nom": "Ventre au mur",
+    "exerciceId": "handstand-ventre-mur",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "hs-kick-up",
+    "nom": "Décollement (kick-up)",
+    "exerciceId": "kick-up",
+    "test": {
+     "type": "reps",
+     "valeur": 5
+    }
+   },
+   {
+    "id": "hs-libre",
+    "nom": "Tenue libre",
+    "exerciceId": "handstand-libre",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   }
+  ]
+ },
+ {
+  "id": "drapeau",
+  "nom": "Drapeau humain",
+  "description": "Pieds au sol, puis groupé, puis jambe étendue, puis complet.",
+  "paliers": [
+   {
+    "id": "dr-prise",
+    "nom": "Prise latérale",
+    "exerciceId": "drapeau-prise",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "dr-groupe",
+    "nom": "Drapeau groupé",
+    "exerciceId": "drapeau-groupe",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "dr-jambe",
+    "nom": "Une jambe étendue",
+    "exerciceId": "drapeau-jambe-etendue",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "dr-complet",
+    "nom": "Drapeau complet",
+    "exerciceId": "drapeau-complet",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   }
+  ]
+ },
+ {
+  "id": "frontlever",
+  "nom": "Front lever",
+  "description": "Du relevé de jambes au front lever complet.",
+  "paliers": [
+   {
+    "id": "fl-releves",
+    "nom": "Relevés de jambes tendues",
+    "exerciceId": "releves-jambes-suspendues",
+    "test": {
+     "type": "reps",
+     "valeur": 8
+    }
+   },
+   {
+    "id": "fl-groupe",
+    "nom": "Front lever groupé",
+    "exerciceId": "fl-groupe",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "fl-avance",
+    "nom": "Front lever avancé",
+    "exerciceId": "fl-avance",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "fl-complet",
+    "nom": "Front lever complet",
+    "exerciceId": "fl-complet",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   }
+  ]
+ },
+ {
+  "id": "muscleup",
+  "nom": "Muscle-up",
+  "description": "Tractions solides, poitrine à la barre, transition, puis muscle-up.",
+  "paliers": [
+   {
+    "id": "mu-tractions",
+    "nom": "Tractions explosives",
+    "exerciceId": "tractions-explosives",
+    "test": {
+     "type": "reps",
+     "valeur": 8
+    }
+   },
+   {
+    "id": "mu-poitrine",
+    "nom": "Poitrine à la barre",
+    "exerciceId": "tractions-poitrine",
+    "test": {
+     "type": "reps",
+     "valeur": 5
+    }
+   },
+   {
+    "id": "mu-transition",
+    "nom": "Transition",
+    "exerciceId": "muscleup-transition",
+    "test": {
+     "type": "reps",
+     "valeur": 3
+    }
+   },
+   {
+    "id": "mu-complet",
+    "nom": "Muscle-up",
+    "exerciceId": "muscleup",
+    "test": {
+     "type": "reps",
+     "valeur": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "planche",
+  "nom": "Planche",
+  "description": "De la planche penchée à la planche complète.",
+  "paliers": [
+   {
+    "id": "pl-penchee",
+    "nom": "Planche penchée",
+    "exerciceId": "planche-penchee",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "pl-groupee",
+    "nom": "Planche groupée",
+    "exerciceId": "planche-groupee",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "pl-avancee",
+    "nom": "Planche avancée",
+    "exerciceId": "planche-avancee",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   },
+   {
+    "id": "pl-complete",
+    "nom": "Planche complète",
+    "exerciceId": "planche-complete",
+    "test": {
+     "type": "tenue",
+     "valeur": 10
+    }
+   }
+  ]
+ }
+]

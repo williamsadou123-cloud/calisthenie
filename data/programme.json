@@ -1,1 +1,220 @@
-{}
+{
+ "semaine": [
+  {
+   "jour": "lun",
+   "lieu": "street",
+   "seance": "tirage",
+   "titre": "Tirage",
+   "blocs": [
+    {
+     "exerciceId": "tractions-pronation",
+     "series": 4
+    },
+    {
+     "exerciceId": "tractions-negatives",
+     "series": 3
+    },
+    {
+     "exerciceId": "tractions-australiennes",
+     "series": 3
+    },
+    {
+     "exerciceId": "releves-genoux-suspendus",
+     "series": 3
+    },
+    {
+     "exerciceId": "suspension-active",
+     "series": 2
+    }
+   ]
+  },
+  {
+   "jour": "mar",
+   "lieu": "maison",
+   "seance": "jambes-gainage",
+   "titre": "Jambes + gainage",
+   "blocs": [
+    {
+     "exerciceId": "squat-bulgare",
+     "series": 3
+    },
+    {
+     "exerciceId": "fentes",
+     "series": 3
+    },
+    {
+     "exerciceId": "pont-fessier-une-jambe",
+     "series": 3
+    },
+    {
+     "exerciceId": "mollets",
+     "series": 3
+    },
+    {
+     "exerciceId": "planche-gainage",
+     "series": 3
+    },
+    {
+     "exerciceId": "gainage-lateral",
+     "series": 2
+    },
+    {
+     "exerciceId": "hollow-body",
+     "series": 2
+    }
+   ]
+  },
+  {
+   "jour": "mer",
+   "lieu": "street",
+   "seance": "poussee",
+   "titre": "Poussée",
+   "blocs": [
+    {
+     "exerciceId": "dips-barres",
+     "series": 4
+    },
+    {
+     "exerciceId": "pompes-declinees",
+     "series": 3
+    },
+    {
+     "exerciceId": "pompes-diamant",
+     "series": 3
+    },
+    {
+     "exerciceId": "pompes-pike",
+     "series": 3
+    },
+    {
+     "exerciceId": "pompes-pseudo-planche",
+     "series": 2
+    }
+   ]
+  },
+  {
+   "jour": "jeu",
+   "lieu": "maison",
+   "seance": "equilibre-mobilite",
+   "titre": "Équilibre sur les mains + mobilité",
+   "blocs": [
+    {
+     "exerciceId": "handstand-dos-mur",
+     "series": 5
+    },
+    {
+     "exerciceId": "tap-epaules",
+     "series": 3
+    },
+    {
+     "exerciceId": "wall-walk",
+     "series": 3
+    },
+    {
+     "exerciceId": "chandelle",
+     "series": 2
+    },
+    {
+     "exerciceId": "chat-vache",
+     "series": 2
+    },
+    {
+     "exerciceId": "poignets-extension",
+     "series": 2
+    }
+   ]
+  },
+  {
+   "jour": "ven",
+   "lieu": "street",
+   "seance": "figures",
+   "titre": "Figures",
+   "blocs": [
+    {
+     "exerciceId": "drapeau-prise",
+     "series": 4
+    },
+    {
+     "exerciceId": "fl-groupe",
+     "series": 4
+    },
+    {
+     "exerciceId": "planche-penchee",
+     "series": 4
+    },
+    {
+     "exerciceId": "tractions-poitrine",
+     "series": 3
+    },
+    {
+     "exerciceId": "muscleup-transition",
+     "series": 3
+    },
+    {
+     "exerciceId": "l-sit",
+     "series": 3
+    }
+   ]
+  },
+  {
+   "jour": "sam",
+   "lieu": "maison",
+   "seance": "corps-entier",
+   "titre": "Corps entier (léger)",
+   "blocs": [
+    {
+     "exerciceId": "pompes",
+     "series": 3
+    },
+    {
+     "exerciceId": "squat",
+     "series": 3
+    },
+    {
+     "exerciceId": "fentes",
+     "series": 2
+    },
+    {
+     "exerciceId": "superman",
+     "series": 3
+    },
+    {
+     "exerciceId": "planche-gainage",
+     "series": 2
+    },
+    {
+     "exerciceId": "mountain-climbers",
+     "series": 2
+    },
+    {
+     "exerciceId": "crunch",
+     "series": 2
+    }
+   ]
+  },
+  {
+   "jour": "dim",
+   "lieu": null,
+   "seance": "repos",
+   "titre": "Repos",
+   "blocs": []
+  }
+ ],
+ "echauffement": [
+  "jumping-jacks",
+  "poignets-rotation",
+  "poignets-extension",
+  "epaules-cercles",
+  "hanches-cercles"
+ ],
+ "etirements": [
+  "etirement-pectoraux",
+  "etirement-ischios",
+  "etirement-quadriceps",
+  "posture-enfant"
+ ],
+ "decharge": {
+  "toutesLesSemaines": 5,
+  "facteur": 0.6
+ }
+}

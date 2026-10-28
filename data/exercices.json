@@ -1,1 +1,2978 @@
-[]
+[
+ {
+  "id": "pompes-genoux",
+  "nom": "Pompes sur les genoux",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux",
+   "triceps",
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 60,
+  "etapes": [
+   "Mains sous les épaules, genoux au sol, corps aligné des genoux à la tête.",
+   "Descends la poitrine vers le sol en gardant les coudes à 45° du corps.",
+   "Pousse jusqu'à étendre les bras sans cambrer."
+  ],
+  "conseils": [
+   "Serre les fessiers et le ventre pendant tout le mouvement.",
+   "Regard légèrement devant les mains."
+  ],
+  "erreurs": [
+   "Bassin qui s'affaisse.",
+   "Coudes écartés à 90°."
+  ],
+  "plusFacile": null,
+  "plusDur": "pompes",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "pompes",
+  "nom": "Pompes classiques",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux",
+   "triceps",
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 75,
+  "etapes": [
+   "Mains un peu plus larges que les épaules, corps en planche.",
+   "Descends jusqu'à frôler le sol avec la poitrine.",
+   "Remonte en poussant le sol, bras tendus sans verrouiller."
+  ],
+  "conseils": [
+   "Contracte les abdos et les fessiers : le corps reste une ligne droite.",
+   "Expire en poussant."
+  ],
+  "erreurs": [
+   "Tête qui plonge en avant.",
+   "Amplitude trop courte."
+  ],
+  "plusFacile": "pompes-genoux",
+  "plusDur": "pompes-diamant",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "pompes-larges",
+  "nom": "Pompes larges",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux",
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 75,
+  "etapes": [
+   "Mains bien plus larges que les épaules, doigts légèrement vers l'extérieur.",
+   "Descends en gardant le corps gainé.",
+   "Remonte sans cambrer le bas du dos."
+  ],
+  "conseils": [
+   "Ne va pas trop large si les épaules tirent.",
+   "Contrôle la descente sur 2 secondes."
+  ],
+  "erreurs": [
+   "Descendre en poussant les fesses en arrière.",
+   "Coudes qui partent à l'horizontale."
+  ],
+  "plusFacile": "pompes",
+  "plusDur": "pompes-declinees",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "pompes-diamant",
+  "nom": "Pompes diamant",
+  "groupe": "poussee",
+  "muscles": [
+   "triceps",
+   "pectoraux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 6,
+   "max": 12
+  },
+  "repos": 75,
+  "etapes": [
+   "Place les mains sous la poitrine, pouces et index formant un losange.",
+   "Descends en gardant les coudes près du corps.",
+   "Pousse fort avec les triceps pour remonter."
+  ],
+  "conseils": [
+   "Si les poignets gênent, écarte légèrement les mains.",
+   "Garde le corps gainé."
+  ],
+  "erreurs": [
+   "Coudes qui s'ouvrent.",
+   "Épaules qui montent vers les oreilles."
+  ],
+  "plusFacile": "pompes",
+  "plusDur": "pompes-archer",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "pompes-declinees",
+  "nom": "Pompes pieds surélevés",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux (haut)",
+   "épaules",
+   "triceps"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 6,
+   "max": 12
+  },
+  "repos": 90,
+  "etapes": [
+   "Pose les pieds sur un banc, une marche ou un canapé stable.",
+   "Mains au sol sous les épaules, corps aligné.",
+   "Descends la tête vers le sol, puis remonte."
+  ],
+  "conseils": [
+   "Plus les pieds sont hauts, plus c'est dur : monte progressivement.",
+   "Gaine bien le ventre."
+  ],
+  "erreurs": [
+   "Dos cambré.",
+   "Support instable."
+  ],
+  "plusFacile": "pompes",
+  "plusDur": "pompes-pike",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "pompes-archer",
+  "nom": "Pompes archer",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux",
+   "triceps"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 8
+  },
+  "repos": 90,
+  "etapes": [
+   "Mains très larges, corps en planche.",
+   "Descends vers une main en gardant l'autre bras tendu.",
+   "Remonte et alterne les côtés."
+  ],
+  "conseils": [
+   "Le bras tendu aide juste à l'équilibre.",
+   "Commence avec peu de répétitions par côté."
+  ],
+  "erreurs": [
+   "Pencher le tronc sur le côté.",
+   "Aller trop vite."
+  ],
+  "plusFacile": "pompes-diamant",
+  "plusDur": "pompes-pseudo-planche",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "pompes-pike",
+  "nom": "Pompes pike (épaules)",
+  "groupe": "poussee",
+  "muscles": [
+   "épaules",
+   "triceps"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 6,
+   "max": 12
+  },
+  "repos": 90,
+  "etapes": [
+   "Corps en V inversé : mains et pieds au sol, fesses hautes.",
+   "Plie les bras pour amener la tête vers le sol entre les mains.",
+   "Pousse pour remonter. C'est la base du travail vers l'équilibre sur les mains."
+  ],
+  "conseils": [
+   "Rapproche les pieds des mains pour augmenter la difficulté.",
+   "Garde les jambes presque tendues."
+  ],
+  "erreurs": [
+   "Dos rond.",
+   "Descendre devant les mains au lieu de dessus."
+  ],
+  "plusFacile": "pompes",
+  "plusDur": "handstand-ventre-mur",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe-pike"
+ },
+ {
+  "id": "pompes-explosives",
+  "nom": "Pompes explosives",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux",
+   "triceps",
+   "explosivité"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 4,
+   "max": 8
+  },
+  "repos": 90,
+  "etapes": [
+   "Position de pompe classique.",
+   "Descends vite, puis pousse assez fort pour décoller les mains du sol.",
+   "Réceptionne en douceur, bras légèrement fléchis."
+  ],
+  "conseils": [
+   "Qualité avant quantité : arrête dès que la vitesse baisse.",
+   "Évite si les poignets sont douloureux."
+  ],
+  "erreurs": [
+   "Réception bras tendus.",
+   "Corps qui cède au milieu."
+  ],
+  "plusFacile": "pompes",
+  "plusDur": "pompes-pseudo-planche",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pompe"
+ },
+ {
+  "id": "dips-banc",
+  "nom": "Dips sur banc ou chaise",
+  "groupe": "poussee",
+  "muscles": [
+   "triceps",
+   "épaules",
+   "pectoraux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 75,
+  "etapes": [
+   "Mains sur le bord d'un banc ou d'une chaise stable, jambes devant toi.",
+   "Plie les coudes vers l'arrière jusqu'à 90°.",
+   "Remonte en poussant sur les mains."
+  ],
+  "conseils": [
+   "Vérifie que le support est stable et ne glisse pas.",
+   "Garde le dos proche du support."
+  ],
+  "erreurs": [
+   "Épaules qui remontent aux oreilles.",
+   "Descendre trop bas."
+  ],
+  "plusFacile": null,
+  "plusDur": "dips-barres",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "dip"
+ },
+ {
+  "id": "dips-barres",
+  "nom": "Dips aux barres parallèles",
+  "groupe": "poussee",
+  "muscles": [
+   "pectoraux",
+   "triceps",
+   "épaules"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 4,
+   "max": 10
+  },
+  "repos": 90,
+  "etapes": [
+   "Soutiens-toi bras tendus sur les barres, épaules basses.",
+   "Descends jusqu'à ce que les coudes soient à environ 90°.",
+   "Remonte en poussant fort sur les barres."
+  ],
+  "conseils": [
+   "Légère inclinaison du buste vers l'avant = plus de pectoraux.",
+   "Descends en 2 secondes."
+  ],
+  "erreurs": [
+   "Aller trop bas sur des épaules fragiles.",
+   "Balancer le corps."
+  ],
+  "plusFacile": "dips-banc",
+  "plusDur": "pompes-pseudo-planche",
+  "substitut": {
+   "maison": "dips-banc",
+   "street": null
+  },
+  "illustration": "dip"
+ },
+ {
+  "id": "pompes-pseudo-planche",
+  "nom": "Pompes pseudo-planche",
+  "groupe": "poussee",
+  "muscles": [
+   "épaules (avant)",
+   "pectoraux",
+   "poignets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 8
+  },
+  "repos": 90,
+  "etapes": [
+   "Mains au niveau de la taille, doigts vers les pieds, corps incliné vers l'avant.",
+   "Garde le corps en planche et les épaules en avant des mains.",
+   "Descends et remonte en gardant l'inclinaison. Prépare la planche."
+  ],
+  "conseils": [
+   "Avance doucement ; cet exercice charge fort les poignets.",
+   "Échauffe bien les poignets."
+  ],
+  "erreurs": [
+   "Reculer les épaules.",
+   "Cambrer le bas du dos."
+  ],
+  "plusFacile": "pompes-archer",
+  "plusDur": "planche-penchee",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche-fig"
+ },
+ {
+  "id": "tractions-australiennes",
+  "nom": "Tractions australiennes",
+  "groupe": "tirage",
+  "muscles": [
+   "dos",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 75,
+  "etapes": [
+   "Allonge-toi sous une barre basse, prise à largeur d'épaules, corps tendu.",
+   "Tire la poitrine vers la barre en serrant les omoplates.",
+   "Redescends en contrôlant."
+  ],
+  "conseils": [
+   "Plus les pieds sont éloignés (corps horizontal), plus c'est dur.",
+   "Garde le bassin haut."
+  ],
+  "erreurs": [
+   "Bassin qui tombe.",
+   "Tirer avec les bras uniquement."
+  ],
+  "plusFacile": null,
+  "plusDur": "tractions-negatives",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction-australienne"
+ },
+ {
+  "id": "rowing-table",
+  "nom": "Rowing sous une table",
+  "groupe": "tirage",
+  "muscles": [
+   "dos",
+   "biceps"
+  ],
+  "lieux": [
+   "maison"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 6,
+   "max": 12
+  },
+  "repos": 75,
+  "etapes": [
+   "Vérifie que la table est très solide et ne bascule pas ; allonge-toi dessous.",
+   "Attrape le bord, corps tendu.",
+   "Tire la poitrine vers le plateau, puis redescends."
+  ],
+  "conseils": [
+   "Place un tapis sous toi et teste la table sans effort d'abord.",
+   "À défaut de table solide, choisis un autre exercice."
+  ],
+  "erreurs": [
+   "Table instable.",
+   "Bassin qui tombe."
+  ],
+  "plusFacile": null,
+  "plusDur": "tractions-negatives",
+  "substitut": {
+   "maison": null,
+   "street": "tractions-australiennes"
+  },
+  "illustration": "traction-australienne"
+ },
+ {
+  "id": "tractions-negatives",
+  "nom": "Tractions négatives",
+  "groupe": "tirage",
+  "muscles": [
+   "dos",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 5
+  },
+  "repos": 90,
+  "etapes": [
+   "Monte au-dessus de la barre (saut ou marche).",
+   "Redescends le plus lentement possible, en 4 à 5 secondes.",
+   "Bras tendus en bas, puis recommence."
+  ],
+  "conseils": [
+   "Idéal pour gagner ta première série propre de tractions.",
+   "Reste gainé, jambes jointes."
+  ],
+  "erreurs": [
+   "Tomber d'un coup.",
+   "Hausser les épaules."
+  ],
+  "plusFacile": "tractions-australiennes",
+  "plusDur": "tractions-pronation",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction"
+ },
+ {
+  "id": "tractions-pronation",
+  "nom": "Tractions (prise pronation)",
+  "groupe": "tirage",
+  "muscles": [
+   "dos",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 5
+  },
+  "repos": 120,
+  "etapes": [
+   "Prise pronation à largeur d'épaules, suspendu bras tendus.",
+   "Tire jusqu'à passer le menton au-dessus de la barre.",
+   "Redescends complètement bras tendus."
+  ],
+  "conseils": [
+   "Pense à tirer les coudes vers les hanches.",
+   "Expire en montant."
+  ],
+  "erreurs": [
+   "Balancer les jambes.",
+   "Demi-répétitions."
+  ],
+  "plusFacile": "tractions-negatives",
+  "plusDur": "tractions-explosives",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction"
+ },
+ {
+  "id": "tractions-supination",
+  "nom": "Tractions prise supination",
+  "groupe": "tirage",
+  "muscles": [
+   "biceps",
+   "dos"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 6
+  },
+  "repos": 120,
+  "etapes": [
+   "Prise supination (paumes vers toi), mains à largeur d'épaules.",
+   "Tire le menton au-dessus de la barre.",
+   "Redescends bras tendus."
+  ],
+  "conseils": [
+   "Un peu plus facile que la prise pronation pour la plupart des gens."
+  ],
+  "erreurs": [
+   "Coudes qui partent vers l'avant.",
+   "Dos cambré."
+  ],
+  "plusFacile": "tractions-negatives",
+  "plusDur": "tractions-pronation",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction"
+ },
+ {
+  "id": "tractions-larges",
+  "nom": "Tractions prise large",
+  "groupe": "tirage",
+  "muscles": [
+   "grand dorsal"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 2,
+   "max": 6
+  },
+  "repos": 120,
+  "etapes": [
+   "Prise pronation, mains nettement plus larges que les épaules.",
+   "Tire la poitrine vers la barre.",
+   "Redescends en contrôle."
+  ],
+  "conseils": [
+   "Plus large = plus dur. Commence légèrement plus large que les épaules."
+  ],
+  "erreurs": [
+   "Avancer la tête.",
+   "Amplitude réduite."
+  ],
+  "plusFacile": "tractions-pronation",
+  "plusDur": "tractions-explosives",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction"
+ },
+ {
+  "id": "tractions-explosives",
+  "nom": "Tractions explosives",
+  "groupe": "tirage",
+  "muscles": [
+   "dos",
+   "biceps",
+   "explosivité"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 6
+  },
+  "repos": 120,
+  "etapes": [
+   "Pars bras tendus, corps gainé.",
+   "Tire le plus vite possible pour amener la poitrine vers la barre.",
+   "Redescends en contrôle. Prépare le muscle-up."
+  ],
+  "conseils": [
+   "Vise la poitrine à la barre, pas seulement le menton."
+  ],
+  "erreurs": [
+   "Se balancer.",
+   "Relâcher le bas du corps."
+  ],
+  "plusFacile": "tractions-pronation",
+  "plusDur": "tractions-poitrine",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction"
+ },
+ {
+  "id": "releves-genoux-suspendus",
+  "nom": "Relevés de genoux suspendus",
+  "groupe": "tirage",
+  "muscles": [
+   "abdominaux",
+   "fléchisseurs de hanche"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 6,
+   "max": 12
+  },
+  "repos": 60,
+  "etapes": [
+   "Suspends-toi à la barre, épaules actives.",
+   "Monte les genoux vers la poitrine en enroulant le bassin.",
+   "Redescends sans balancer."
+  ],
+  "conseils": [
+   "Pense à enrouler le bassin, pas juste lever les genoux."
+  ],
+  "erreurs": [
+   "Élan avec tout le corps.",
+   "Épaules relâchées."
+  ],
+  "plusFacile": null,
+  "plusDur": "releves-jambes-suspendues",
+  "substitut": {
+   "maison": "releves-jambes-sol",
+   "street": null
+  },
+  "illustration": "releve"
+ },
+ {
+  "id": "releves-jambes-suspendues",
+  "nom": "Relevés de jambes tendues",
+  "groupe": "tirage",
+  "muscles": [
+   "abdominaux",
+   "fléchisseurs de hanche"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 4,
+   "max": 10
+  },
+  "repos": 75,
+  "etapes": [
+   "Suspendu, jambes tendues et serrées.",
+   "Monte les jambes jusqu'à toucher la barre ou à l'horizontale.",
+   "Redescends en contrôle."
+  ],
+  "conseils": [
+   "Plie légèrement les genoux si les ischios sont raides."
+  ],
+  "erreurs": [
+   "Balancer le corps.",
+   "Amplitude trop faible."
+  ],
+  "plusFacile": "releves-genoux-suspendus",
+  "plusDur": "l-sit",
+  "substitut": {
+   "maison": "releves-jambes-sol",
+   "street": null
+  },
+  "illustration": "releve"
+ },
+ {
+  "id": "suspension-active",
+  "nom": "Suspension active à la barre",
+  "groupe": "tirage",
+  "muscles": [
+   "dos",
+   "épaules",
+   "avant-bras"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 3,
+  "plage": {
+   "min": 20,
+   "max": 40
+  },
+  "repos": 60,
+  "etapes": [
+   "Suspends-toi à la barre, bras tendus.",
+   "Descends les omoplates (éloigne les épaules des oreilles) sans plier les bras.",
+   "Tiens la position en respirant calmement."
+  ],
+  "conseils": [
+   "Parfait pour renforcer la prise et préparer les figures."
+  ],
+  "erreurs": [
+   "Épaules haussées.",
+   "Retenir sa respiration."
+  ],
+  "plusFacile": null,
+  "plusDur": "tractions-negatives",
+  "substitut": {
+   "maison": "superman",
+   "street": null
+  },
+  "illustration": "suspension"
+ },
+ {
+  "id": "superman",
+  "nom": "Superman",
+  "groupe": "tirage",
+  "muscles": [
+   "bas du dos",
+   "fessiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 10,
+   "max": 15
+  },
+  "repos": 45,
+  "etapes": [
+   "Allonge-toi sur le ventre, bras tendus devant.",
+   "Lève bras et jambes en même temps du sol.",
+   "Tiens 1 seconde, puis redescends."
+  ],
+  "conseils": [
+   "Regard vers le sol pour garder la nuque neutre."
+  ],
+  "erreurs": [
+   "Cambrer trop fort.",
+   "Lancer les membres avec élan."
+  ],
+  "plusFacile": null,
+  "plusDur": "bird-dog",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "superman"
+ },
+ {
+  "id": "squat",
+  "nom": "Squat au poids du corps",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 15,
+   "max": 25
+  },
+  "repos": 60,
+  "etapes": [
+   "Pieds à largeur d'épaules, pointes légèrement ouvertes.",
+   "Descends les fesses en arrière et en bas, genoux dans l'axe des orteils.",
+   "Remonte en poussant dans les talons."
+  ],
+  "conseils": [
+   "Garde le dos droit et le regard devant.",
+   "Pieds bien à plat."
+  ],
+  "erreurs": [
+   "Genoux qui rentrent.",
+   "Talons qui décollent."
+  ],
+  "plusFacile": "squat-mur",
+  "plusDur": "squat-saute",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "squat"
+ },
+ {
+  "id": "squat-saute",
+  "nom": "Squat sauté",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers",
+   "explosivité"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 75,
+  "etapes": [
+   "Descends en squat.",
+   "Saute le plus haut possible en poussant fort.",
+   "Réceptionne en souplesse et enchaîne."
+  ],
+  "conseils": [
+   "Réception silencieuse = bonne technique."
+  ],
+  "erreurs": [
+   "Réception genoux verrouillés.",
+   "Genoux qui rentrent."
+  ],
+  "plusFacile": "squat",
+  "plusDur": "fentes-sautees",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "squat"
+ },
+ {
+  "id": "fentes",
+  "nom": "Fentes alternées",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 10,
+   "max": 16
+  },
+  "repos": 60,
+  "etapes": [
+   "Debout, fais un grand pas en avant.",
+   "Descends jusqu'à ce que le genou arrière frôle le sol.",
+   "Pousse sur la jambe avant pour revenir, puis change de jambe."
+  ],
+  "conseils": [
+   "Tronc droit, genou avant au-dessus de la cheville."
+  ],
+  "erreurs": [
+   "Pas trop court.",
+   "Genou avant qui dépasse beaucoup."
+  ],
+  "plusFacile": "squat",
+  "plusDur": "fentes-marchees",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "fente"
+ },
+ {
+  "id": "fentes-marchees",
+  "nom": "Fentes marchées",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers",
+   "équilibre"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 10,
+   "max": 20
+  },
+  "repos": 75,
+  "etapes": [
+   "Fais une fente en avant.",
+   "Enchaîne directement avec l'autre jambe en avançant.",
+   "Garde le buste droit."
+  ],
+  "conseils": [
+   "Besoin d'espace : au moins 5 à 6 mètres."
+  ],
+  "erreurs": [
+   "Pas trop petits.",
+   "Se pencher en avant."
+  ],
+  "plusFacile": "fentes",
+  "plusDur": "squat-bulgare",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "fente"
+ },
+ {
+  "id": "squat-bulgare",
+  "nom": "Squat bulgare",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 6,
+   "max": 12
+  },
+  "repos": 90,
+  "etapes": [
+   "Pose le pied arrière sur un banc ou une chaise stable.",
+   "Descends à la verticale jusqu'à ce que la cuisse avant soit parallèle au sol.",
+   "Remonte en poussant sur la jambe avant."
+  ],
+  "conseils": [
+   "Éloigne bien le pied avant du support.",
+   "Fais le même nombre de répétitions de chaque côté."
+  ],
+  "erreurs": [
+   "Support instable.",
+   "Genou qui rentre."
+  ],
+  "plusFacile": "fentes",
+  "plusDur": "pistol-assiste",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "fente"
+ },
+ {
+  "id": "pistol-assiste",
+  "nom": "Pistol squat assisté",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers",
+   "équilibre"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 8
+  },
+  "repos": 90,
+  "etapes": [
+   "Tiens-toi à un support (poteau, barre ou porte).",
+   "Descends sur une jambe, l'autre tendue devant toi.",
+   "Remonte en t'aidant le moins possible des mains."
+  ],
+  "conseils": [
+   "Réduis l'aide avec le temps. Assieds-toi sur un banc pour limiter la profondeur."
+  ],
+  "erreurs": [
+   "Talon qui décolle.",
+   "Tout le poids sur les bras."
+  ],
+  "plusFacile": "squat-bulgare",
+  "plusDur": "pistol-squat",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "squat"
+ },
+ {
+  "id": "pistol-squat",
+  "nom": "Pistol squat",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers",
+   "équilibre"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 1,
+   "max": 5
+  },
+  "repos": 120,
+  "etapes": [
+   "Debout sur une jambe, l'autre tendue devant.",
+   "Descends complètement en gardant le talon posé.",
+   "Remonte sans aide."
+  ],
+  "conseils": [
+   "Étire d'abord les chevilles et les hanches."
+  ],
+  "erreurs": [
+   "Perdre l'équilibre sur la descente.",
+   "Dos arrondi."
+  ],
+  "plusFacile": "pistol-assiste",
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "squat"
+ },
+ {
+  "id": "montees-banc",
+  "nom": "Montées sur banc",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 10,
+   "max": 16
+  },
+  "repos": 60,
+  "etapes": [
+   "Place un pied entier sur un banc, une marche ou une chaise stable.",
+   "Monte en poussant sur cette jambe seulement.",
+   "Redescends en contrôle et alterne."
+  ],
+  "conseils": [
+   "Ne pousse pas avec la jambe au sol."
+  ],
+  "erreurs": [
+   "Support instable.",
+   "Élan avec la jambe arrière."
+  ],
+  "plusFacile": "squat",
+  "plusDur": "squat-bulgare",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "fente"
+ },
+ {
+  "id": "mollets",
+  "nom": "Montées sur pointes",
+  "groupe": "jambes",
+  "muscles": [
+   "mollets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 15,
+   "max": 25
+  },
+  "repos": 45,
+  "etapes": [
+   "Debout, pieds largeur de hanches, près d'un mur pour l'équilibre.",
+   "Monte sur la pointe des pieds le plus haut possible.",
+   "Redescends lentement."
+  ],
+  "conseils": [
+   "Pause d'une seconde en haut pour plus d'effet."
+  ],
+  "erreurs": [
+   "Rebondir.",
+   "Amplitude courte."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "squat"
+ },
+ {
+  "id": "pont-fessier",
+  "nom": "Pont fessier",
+  "groupe": "jambes",
+  "muscles": [
+   "fessiers",
+   "ischio-jambiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 12,
+   "max": 20
+  },
+  "repos": 45,
+  "etapes": [
+   "Allonge-toi sur le dos, genoux pliés, pieds au sol.",
+   "Pousse sur les talons pour monter le bassin.",
+   "Serre les fessiers en haut, puis redescends."
+  ],
+  "conseils": [
+   "Menton légèrement rentré, ne cambre pas le bas du dos."
+  ],
+  "erreurs": [
+   "Pousser avec le dos.",
+   "Genoux qui s'écartent."
+  ],
+  "plusFacile": null,
+  "plusDur": "pont-fessier-une-jambe",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pont"
+ },
+ {
+  "id": "pont-fessier-une-jambe",
+  "nom": "Pont fessier une jambe",
+  "groupe": "jambes",
+  "muscles": [
+   "fessiers",
+   "ischio-jambiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 60,
+  "etapes": [
+   "Position de pont, une jambe tendue en l'air.",
+   "Monte le bassin en poussant sur le talon de la jambe d'appui.",
+   "Redescends sans poser le bassin."
+  ],
+  "conseils": [
+   "Garde le bassin à plat, sans rotation."
+  ],
+  "erreurs": [
+   "Bassin qui bascule.",
+   "Cambrer."
+  ],
+  "plusFacile": "pont-fessier",
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "pont"
+ },
+ {
+  "id": "squat-mur",
+  "nom": "Chaise contre le mur",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "tenue",
+  "series": 3,
+  "plage": {
+   "min": 20,
+   "max": 45
+  },
+  "repos": 60,
+  "etapes": [
+   "Dos plaqué au mur, descends jusqu'à avoir les cuisses parallèles au sol.",
+   "Genoux à 90° au-dessus des chevilles.",
+   "Tiens la position en respirant."
+  ],
+  "conseils": [
+   "Pose les mains sur les cuisses, pas sur les genoux."
+  ],
+  "erreurs": [
+   "Genoux qui avancent trop.",
+   "Dos qui quitte le mur."
+  ],
+  "plusFacile": "squat",
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mur"
+ },
+ {
+  "id": "fentes-sautees",
+  "nom": "Fentes sautées",
+  "groupe": "jambes",
+  "muscles": [
+   "quadriceps",
+   "fessiers",
+   "explosivité"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 16
+  },
+  "repos": 90,
+  "etapes": [
+   "Fente basse.",
+   "Saute et change de jambe en l'air.",
+   "Réceptionne en fente, genou contrôlé."
+  ],
+  "conseils": [
+   "Commence petit si les genoux sont fragiles."
+  ],
+  "erreurs": [
+   "Réception raide.",
+   "Genou qui rentre."
+  ],
+  "plusFacile": "fentes",
+  "plusDur": "pistol-assiste",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "fente"
+ },
+ {
+  "id": "planche-gainage",
+  "nom": "Planche gainage",
+  "groupe": "gainage",
+  "muscles": [
+   "abdominaux",
+   "épaules",
+   "dos"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 3,
+  "plage": {
+   "min": 20,
+   "max": 60
+  },
+  "repos": 45,
+  "etapes": [
+   "Avant-bras au sol, coudes sous les épaules, corps en ligne.",
+   "Serre les abdos et les fessiers.",
+   "Tiens la position en respirant normalement."
+  ],
+  "conseils": [
+   "Regarde le sol, nuque neutre.",
+   "Arrête quand le bassin s'affaisse."
+  ],
+  "erreurs": [
+   "Bassin trop haut ou trop bas.",
+   "Retenir sa respiration."
+  ],
+  "plusFacile": null,
+  "plusDur": "hollow-body",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche"
+ },
+ {
+  "id": "gainage-lateral",
+  "nom": "Gainage latéral",
+  "groupe": "gainage",
+  "muscles": [
+   "obliques",
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "tenue",
+  "series": 3,
+  "plage": {
+   "min": 15,
+   "max": 45
+  },
+  "repos": 45,
+  "etapes": [
+   "Allongé sur le côté, appui sur l'avant-bras, coude sous l'épaule.",
+   "Lève le bassin pour aligner le corps.",
+   "Tiens, puis change de côté."
+  ],
+  "conseils": [
+   "Pose le genou du bas au sol pour une version plus facile."
+  ],
+  "erreurs": [
+   "Bassin qui retombe.",
+   "Épaule qui s'effondre."
+  ],
+  "plusFacile": "planche-gainage",
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "gainage-lateral"
+ },
+ {
+  "id": "hollow-body",
+  "nom": "Hollow body",
+  "groupe": "gainage",
+  "muscles": [
+   "abdominaux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "tenue",
+  "series": 3,
+  "plage": {
+   "min": 15,
+   "max": 40
+  },
+  "repos": 60,
+  "etapes": [
+   "Sur le dos, bas du dos plaqué au sol.",
+   "Lève les jambes tendues et les épaules, bras le long des oreilles.",
+   "Tiens en gardant le bas du dos collé."
+  ],
+  "conseils": [
+   "Plus les jambes sont basses, plus c'est dur.",
+   "Plie les genoux pour faciliter."
+  ],
+  "erreurs": [
+   "Bas du dos qui se creuse.",
+   "Menton qui s'enfonce."
+  ],
+  "plusFacile": "planche-gainage",
+  "plusDur": "l-sit",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "hollow"
+ },
+ {
+  "id": "crunch",
+  "nom": "Crunch",
+  "groupe": "gainage",
+  "muscles": [
+   "abdominaux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 15,
+   "max": 25
+  },
+  "repos": 45,
+  "etapes": [
+   "Sur le dos, genoux pliés, mains près des tempes.",
+   "Enroule le haut du dos pour décoller les omoplates.",
+   "Redescends avec contrôle."
+  ],
+  "conseils": [
+   "Expire en montant."
+  ],
+  "erreurs": [
+   "Tirer sur la nuque.",
+   "Monter avec le cou."
+  ],
+  "plusFacile": null,
+  "plusDur": "releves-jambes-sol",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "releve"
+ },
+ {
+  "id": "releves-jambes-sol",
+  "nom": "Relevés de jambes au sol",
+  "groupe": "gainage",
+  "muscles": [
+   "abdominaux (bas)"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 15
+  },
+  "repos": 60,
+  "etapes": [
+   "Sur le dos, mains sous les fesses, jambes tendues.",
+   "Monte les jambes à la verticale.",
+   "Redescends sans poser les talons."
+  ],
+  "conseils": [
+   "Garde le bas du dos plaqué au sol."
+  ],
+  "erreurs": [
+   "Cambrer en bas.",
+   "Aller trop vite."
+  ],
+  "plusFacile": "crunch",
+  "plusDur": "hollow-body",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "releve"
+ },
+ {
+  "id": "mountain-climbers",
+  "nom": "Mountain climbers",
+  "groupe": "gainage",
+  "muscles": [
+   "abdominaux",
+   "épaules",
+   "cardio"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 20,
+   "max": 40
+  },
+  "repos": 45,
+  "etapes": [
+   "Position de pompe, bras tendus.",
+   "Ramène un genou vers la poitrine puis l'autre, en alternant vite.",
+   "Garde les épaules au-dessus des mains."
+  ],
+  "conseils": [
+   "Fais-le à un rythme que tu peux tenir proprement."
+  ],
+  "erreurs": [
+   "Fesses trop hautes.",
+   "Mains qui reculent."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "cardio"
+ },
+ {
+  "id": "bird-dog",
+  "nom": "Bird dog",
+  "groupe": "gainage",
+  "muscles": [
+   "dos",
+   "abdominaux",
+   "fessiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 8,
+   "max": 12
+  },
+  "repos": 45,
+  "etapes": [
+   "À quatre pattes, mains sous les épaules, genoux sous les hanches.",
+   "Tends le bras droit et la jambe gauche en même temps.",
+   "Reviens et change de côté."
+  ],
+  "conseils": [
+   "Imagine un verre d'eau posé sur ton dos : il ne doit pas tomber."
+  ],
+  "erreurs": [
+   "Bassin qui tourne.",
+   "Cambrer."
+  ],
+  "plusFacile": null,
+  "plusDur": "planche-gainage",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "superman"
+ },
+ {
+  "id": "l-sit",
+  "nom": "L-sit",
+  "groupe": "gainage",
+  "muscles": [
+   "abdominaux",
+   "triceps",
+   "fléchisseurs de hanche"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "tenue",
+  "series": 3,
+  "plage": {
+   "min": 5,
+   "max": 20
+  },
+  "repos": 90,
+  "etapes": [
+   "Pose les mains au sol (ou sur des barres) à côté des hanches, bras tendus.",
+   "Pousse fort, soulève les fesses et tends les jambes devant toi.",
+   "Tiens, épaules basses."
+  ],
+  "conseils": [
+   "Commence jambes pliées (position groupée).",
+   "Idéal pour préparer les figures."
+  ],
+  "erreurs": [
+   "Épaules qui remontent.",
+   "Bras fléchis."
+  ],
+  "plusFacile": "hollow-body",
+  "plusDur": "planche-penchee",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "l-sit"
+ },
+ {
+  "id": "chandelle",
+  "nom": "Chandelle",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "haut du dos"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 2,
+  "plage": {
+   "min": 20,
+   "max": 40
+  },
+  "repos": 45,
+  "etapes": [
+   "Allonge-toi sur le dos, mains sous le bassin pour soutenir.",
+   "Monte les jambes et le bassin à la verticale.",
+   "Respire calmement, poids sur les épaules et les bras."
+  ],
+  "conseils": [
+   "Évite de tourner la tête ; ne pas faire en cas de douleur au cou."
+  ],
+  "erreurs": [
+   "Poids sur la nuque.",
+   "Bascule brutale."
+  ],
+  "plusFacile": null,
+  "plusDur": "handstand-dos-mur",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mur"
+ },
+ {
+  "id": "tap-epaules",
+  "nom": "Tapes aux épaules en planche",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "abdominaux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 2,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 10,
+   "max": 20
+  },
+  "repos": 60,
+  "etapes": [
+   "Position de pompe, pieds écartés.",
+   "Touche l'épaule gauche avec la main droite, puis inverse.",
+   "Garde le bassin immobile."
+  ],
+  "conseils": [
+   "Écarte les pieds pour être plus stable."
+  ],
+  "erreurs": [
+   "Bassin qui bascule.",
+   "Aller trop vite."
+  ],
+  "plusFacile": null,
+  "plusDur": "wall-walk",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche"
+ },
+ {
+  "id": "wall-walk",
+  "nom": "Marche au mur",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "abdominaux",
+   "poignets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "reps",
+  "series": 3,
+  "plage": {
+   "min": 3,
+   "max": 6
+  },
+  "repos": 90,
+  "etapes": [
+   "Pars en planche, pieds contre le mur.",
+   "Marche avec les pieds sur le mur en rapprochant les mains.",
+   "Redescends lentement avec les mains."
+  ],
+  "conseils": [
+   "Un mur sans objet fragile à proximité.",
+   "Arrête si le poignet tire."
+  ],
+  "erreurs": [
+   "Arrondir le dos.",
+   "Tomber de haut en désordre."
+  ],
+  "plusFacile": "tap-epaules",
+  "plusDur": "handstand-ventre-mur",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mur"
+ },
+ {
+  "id": "handstand-dos-mur",
+  "nom": "Équilibre sur les mains, dos au mur",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "abdominaux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 10,
+   "max": 30
+  },
+  "repos": 90,
+  "etapes": [
+   "Pose les mains au sol à 30 cm du mur, puis monte une jambe puis l'autre (ou kick-up).",
+   "Pousse fort dans le sol, épaules ouvertes, corps tendu.",
+   "Les talons touchent à peine le mur ; tiens en respirant."
+  ],
+  "conseils": [
+   "Regarde entre tes mains.",
+   "Pense à pousser le sol pour grandir."
+  ],
+  "erreurs": [
+   "Corps en banane.",
+   "Coudes pliés."
+  ],
+  "plusFacile": "wall-walk",
+  "plusDur": "handstand-ventre-mur",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "handstand"
+ },
+ {
+  "id": "handstand-ventre-mur",
+  "nom": "Équilibre sur les mains, ventre au mur",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "abdominaux",
+   "équilibre"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 10,
+   "max": 30
+  },
+  "repos": 90,
+  "etapes": [
+   "Marche au mur jusqu'à avoir le ventre contre le mur, bras tendus.",
+   "Garde le corps en ligne, épaules bien ouvertes.",
+   "Tiens en respirant, puis redescends en marchant."
+  ],
+  "conseils": [
+   "Plus le corps est droit, plus tu apprends l'alignement."
+  ],
+  "erreurs": [
+   "Dos cambré.",
+   "Épaules fermées."
+  ],
+  "plusFacile": "handstand-dos-mur",
+  "plusDur": "kick-up",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "handstand"
+ },
+ {
+  "id": "kick-up",
+  "nom": "Kick-up (montée en équilibre)",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "équilibre"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 6
+  },
+  "repos": 90,
+  "etapes": [
+   "Mains au sol, jambe forte en avant.",
+   "Lance la jambe arrière puis rejoins-la, tout en poussant.",
+   "Tiens une seconde, puis redescends en contrôle. Sors par la roulade si tu tombes."
+  ],
+  "conseils": [
+   "Apprends à sortir en sécurité (roulade) avant de chercher à tenir."
+  ],
+  "erreurs": [
+   "Pas de sortie prévue.",
+   "Bras qui plient."
+  ],
+  "plusFacile": "handstand-ventre-mur",
+  "plusDur": "handstand-libre",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "handstand"
+ },
+ {
+  "id": "handstand-libre",
+  "nom": "Équilibre sur les mains libre",
+  "groupe": "equilibre",
+  "muscles": [
+   "épaules",
+   "équilibre"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 5,
+   "max": 30
+  },
+  "repos": 120,
+  "etapes": [
+   "Monte en kick-up ou depuis la planche.",
+   "Corps aligné, doigts qui corrigent l'équilibre.",
+   "Tiens le plus longtemps possible, puis sors proprement."
+  ],
+  "conseils": [
+   "Travaille la durée petit à petit : 5 s, puis 10 s, puis 20 s."
+  ],
+  "erreurs": [
+   "Ne pas savoir sortir.",
+   "Avoir les poignets fatigués."
+  ],
+  "plusFacile": "kick-up",
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "handstand"
+ },
+ {
+  "id": "drapeau-prise",
+  "nom": "Drapeau : prise latérale",
+  "groupe": "figure",
+  "muscles": [
+   "obliques",
+   "épaules",
+   "dos"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 5,
+   "max": 15
+  },
+  "repos": 90,
+  "etapes": [
+   "Place-toi à un poteau vertical : main haute en prise, main basse en poussée.",
+   "Tire avec le bras du haut et pousse avec celui du bas, pieds au sol.",
+   "Tiens le corps incliné, pieds au sol, pour apprendre la position."
+  ],
+  "conseils": [
+   "Échauffe bien les poignets et les épaules.",
+   "Progression : commence avec les pieds au sol."
+  ],
+  "erreurs": [
+   "Épaule qui grimpe.",
+   "Corps en arc de cercle."
+  ],
+  "plusFacile": null,
+  "plusDur": "drapeau-groupe",
+  "substitut": {
+   "maison": "gainage-lateral",
+   "street": null
+  },
+  "illustration": "drapeau"
+ },
+ {
+  "id": "drapeau-groupe",
+  "nom": "Drapeau groupé",
+  "groupe": "figure",
+  "muscles": [
+   "obliques",
+   "épaules",
+   "dos"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 5,
+   "max": 15
+  },
+  "repos": 120,
+  "etapes": [
+   "Dans la position du drapeau, lève le corps en repliant les genoux vers la poitrine.",
+   "Corps parallèle au sol, bras haut tendu, bras bas poussé.",
+   "Tiens, puis redescends en contrôle."
+  ],
+  "conseils": [
+   "Reste au moins 5 secondes avant de passer au palier suivant."
+  ],
+  "erreurs": [
+   "Perdre l'alignement des épaules.",
+   "Descendre trop vite."
+  ],
+  "plusFacile": "drapeau-prise",
+  "plusDur": "drapeau-jambe-etendue",
+  "substitut": {
+   "maison": "gainage-lateral",
+   "street": null
+  },
+  "illustration": "drapeau"
+ },
+ {
+  "id": "drapeau-jambe-etendue",
+  "nom": "Drapeau une jambe étendue",
+  "groupe": "figure",
+  "muscles": [
+   "obliques",
+   "épaules",
+   "dos"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 10
+  },
+  "repos": 150,
+  "etapes": [
+   "Depuis le drapeau groupé, tends une jambe loin du corps.",
+   "Garde le buste aligné et les bras tendus.",
+   "Tiens, puis reviens groupé."
+  ],
+  "conseils": [
+   "Étends la jambe progressivement."
+  ],
+  "erreurs": [
+   "Hanche qui tombe.",
+   "Épaule haussée."
+  ],
+  "plusFacile": "drapeau-groupe",
+  "plusDur": "drapeau-complet",
+  "substitut": {
+   "maison": "gainage-lateral",
+   "street": null
+  },
+  "illustration": "drapeau"
+ },
+ {
+  "id": "drapeau-complet",
+  "nom": "Drapeau humain",
+  "groupe": "figure",
+  "muscles": [
+   "obliques",
+   "épaules",
+   "dos"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 10
+  },
+  "repos": 180,
+  "etapes": [
+   "Corps horizontal, jambes jointes et tendues.",
+   "Tire avec le bras haut, pousse avec le bras bas, corps en ligne.",
+   "Tiens, puis redescends en contrôle."
+  ],
+  "conseils": [
+   "Avance avec patience : ce mouvement demande des mois de travail."
+  ],
+  "erreurs": [
+   "Perdre la ligne du corps.",
+   "Chercher la figure avant la force de base."
+  ],
+  "plusFacile": "drapeau-jambe-etendue",
+  "plusDur": null,
+  "substitut": {
+   "maison": "gainage-lateral",
+   "street": null
+  },
+  "illustration": "drapeau"
+ },
+ {
+  "id": "fl-groupe",
+  "nom": "Front lever groupé",
+  "groupe": "figure",
+  "muscles": [
+   "dos",
+   "abdominaux",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 5,
+   "max": 15
+  },
+  "repos": 120,
+  "etapes": [
+   "Suspendu à la barre, monte les genoux vers la poitrine.",
+   "Tire les bras vers le bas, bassin à hauteur des épaules.",
+   "Corps horizontal, dos plat, tiens."
+  ],
+  "conseils": [
+   "Passe par les tractions négatives et les relevés de jambes pour préparer."
+  ],
+  "erreurs": [
+   "Dos rond.",
+   "Bras fléchis."
+  ],
+  "plusFacile": "releves-jambes-suspendues",
+  "plusDur": "fl-avance",
+  "substitut": {
+   "maison": "hollow-body",
+   "street": null
+  },
+  "illustration": "front-lever"
+ },
+ {
+  "id": "fl-avance",
+  "nom": "Front lever avancé groupé",
+  "groupe": "figure",
+  "muscles": [
+   "dos",
+   "abdominaux",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 10
+  },
+  "repos": 150,
+  "etapes": [
+   "Depuis la position groupée, ouvre les hanches en étendant un peu le corps.",
+   "Garde les bras tendus et le corps horizontal.",
+   "Tiens, puis reviens groupé."
+  ],
+  "conseils": [
+   "Étends peu à peu."
+  ],
+  "erreurs": [
+   "Hanches qui tombent.",
+   "Bras qui plient."
+  ],
+  "plusFacile": "fl-groupe",
+  "plusDur": "fl-complet",
+  "substitut": {
+   "maison": "hollow-body",
+   "street": null
+  },
+  "illustration": "front-lever"
+ },
+ {
+  "id": "fl-complet",
+  "nom": "Front lever",
+  "groupe": "figure",
+  "muscles": [
+   "dos",
+   "abdominaux",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 10
+  },
+  "repos": 180,
+  "etapes": [
+   "Suspendu, corps tendu, horizontal face au sol.",
+   "Bras tendus, épaules en arrière, abdos serrés.",
+   "Tiens, puis redescends en contrôle."
+  ],
+  "conseils": [
+   "Figure très exigeante : respecte chaque palier."
+  ],
+  "erreurs": [
+   "Hanches qui tombent.",
+   "Aller trop vite."
+  ],
+  "plusFacile": "fl-avance",
+  "plusDur": null,
+  "substitut": {
+   "maison": "hollow-body",
+   "street": null
+  },
+  "illustration": "front-lever"
+ },
+ {
+  "id": "tractions-poitrine",
+  "nom": "Tractions poitrine à la barre",
+  "groupe": "figure",
+  "muscles": [
+   "dos",
+   "biceps"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "reps",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 6
+  },
+  "repos": 120,
+  "etapes": [
+   "Prise pronation, tire explosif en reculant légèrement les épaules.",
+   "Amène la poitrine à la barre.",
+   "Redescends en contrôle."
+  ],
+  "conseils": [
+   "Prépare la transition du muscle-up."
+  ],
+  "erreurs": [
+   "Tirer avec les bras seulement.",
+   "Pas de contrôle à la descente."
+  ],
+  "plusFacile": "tractions-explosives",
+  "plusDur": "muscleup-transition",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "traction"
+ },
+ {
+  "id": "muscleup-transition",
+  "nom": "Transition du muscle-up",
+  "groupe": "figure",
+  "muscles": [
+   "dos",
+   "triceps",
+   "pectoraux"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "reps",
+  "series": 4,
+  "plage": {
+   "min": 2,
+   "max": 5
+  },
+  "repos": 150,
+  "etapes": [
+   "Monte une traction explosive, poitrine au-dessus de la barre.",
+   "Fais basculer les poignets et les épaules au-dessus de la barre.",
+   "Termine en appui, bras tendus, puis redescends en contrôle."
+  ],
+  "conseils": [
+   "Utilise des élastiques ou fais des négatives pour apprendre le mouvement."
+  ],
+  "erreurs": [
+   "Hésiter au sommet.",
+   "Se balancer."
+  ],
+  "plusFacile": "tractions-poitrine",
+  "plusDur": "muscleup",
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "muscle-up"
+ },
+ {
+  "id": "muscleup",
+  "nom": "Muscle-up",
+  "groupe": "figure",
+  "muscles": [
+   "dos",
+   "triceps",
+   "pectoraux"
+  ],
+  "lieux": [
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "reps",
+  "series": 4,
+  "plage": {
+   "min": 1,
+   "max": 5
+  },
+  "repos": 180,
+  "etapes": [
+   "Pars de la suspension, bras tendus.",
+   "Tire explosif, bascule au-dessus de la barre.",
+   "Pousse jusqu'en appui, puis redescends en contrôle."
+  ],
+  "conseils": [
+   "Maîtrise d'abord 8-10 tractions solides et des dips complets."
+  ],
+  "erreurs": [
+   "Casser l'élan.",
+   "Tomber à la descente."
+  ],
+  "plusFacile": "muscleup-transition",
+  "plusDur": null,
+  "substitut": {
+   "maison": "rowing-table",
+   "street": null
+  },
+  "illustration": "muscle-up"
+ },
+ {
+  "id": "planche-penchee",
+  "nom": "Planche penchée",
+  "groupe": "figure",
+  "muscles": [
+   "épaules (avant)",
+   "poignets",
+   "abdominaux"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 3,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 10,
+   "max": 30
+  },
+  "repos": 90,
+  "etapes": [
+   "Position de pompe, mains un peu plus vers les hanches, doigts vers l'extérieur.",
+   "Penche les épaules en avant des mains, corps gainé.",
+   "Tiens avec le poids sur les mains."
+  ],
+  "conseils": [
+   "Échauffe les poignets.",
+   "Avance les épaules progressivement."
+  ],
+  "erreurs": [
+   "Cambrer le dos.",
+   "Bras qui plient."
+  ],
+  "plusFacile": "l-sit",
+  "plusDur": "planche-groupee",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche-fig"
+ },
+ {
+  "id": "planche-groupee",
+  "nom": "Planche groupée",
+  "groupe": "figure",
+  "muscles": [
+   "épaules",
+   "abdominaux",
+   "poignets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 4,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 5,
+   "max": 15
+  },
+  "repos": 120,
+  "etapes": [
+   "Mains au sol à hauteur de la taille, genoux repliés contre la poitrine.",
+   "Penche-toi en avant, pieds décollés.",
+   "Tiens la position, dos rond."
+  ],
+  "conseils": [
+   "Dos arrondi, regard vers les mains."
+  ],
+  "erreurs": [
+   "Rester sur les pieds.",
+   "Coudes qui plient."
+  ],
+  "plusFacile": "planche-penchee",
+  "plusDur": "planche-avancee",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche-fig"
+ },
+ {
+  "id": "planche-avancee",
+  "nom": "Planche avancée groupée",
+  "groupe": "figure",
+  "muscles": [
+   "épaules",
+   "abdominaux",
+   "poignets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 10
+  },
+  "repos": 150,
+  "etapes": [
+   "Depuis la planche groupée, étends peu à peu les hanches en gardant le dos plat.",
+   "Épaules en avant, bras tendus.",
+   "Tiens, puis reviens groupé."
+  ],
+  "conseils": [
+   "Étends peu à peu."
+  ],
+  "erreurs": [
+   "Hanches trop hautes.",
+   "Épaules qui reculent."
+  ],
+  "plusFacile": "planche-groupee",
+  "plusDur": "planche-complete",
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche-fig"
+ },
+ {
+  "id": "planche-complete",
+  "nom": "Planche",
+  "groupe": "figure",
+  "muscles": [
+   "épaules",
+   "abdominaux",
+   "poignets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 5,
+  "type": "tenue",
+  "series": 4,
+  "plage": {
+   "min": 3,
+   "max": 10
+  },
+  "repos": 180,
+  "etapes": [
+   "Appui sur les mains, corps horizontal, jambes jointes et tendues.",
+   "Épaules en avant des mains, bras tendus.",
+   "Tiens, puis redescends en contrôle."
+  ],
+  "conseils": [
+   "Figure très exigeante : respecte chaque palier."
+  ],
+  "erreurs": [
+   "Fesses trop hautes.",
+   "Aller trop vite."
+  ],
+  "plusFacile": "planche-avancee",
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "planche-fig"
+ },
+ {
+  "id": "jumping-jacks",
+  "nom": "Jumping jacks",
+  "groupe": "mobilite",
+  "muscles": [
+   "cardio"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 2,
+  "plage": {
+   "min": 20,
+   "max": 40
+  },
+  "repos": 30,
+  "etapes": [
+   "Debout, pieds joints, bras le long du corps.",
+   "Saute en écartant les pieds et en levant les bras au-dessus de la tête.",
+   "Reviens et enchaîne."
+  ],
+  "conseils": [
+   "Rythme régulier pour élever la température du corps."
+  ],
+  "erreurs": [
+   "Réception raide."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "cardio"
+ },
+ {
+  "id": "poignets-rotation",
+  "nom": "Rotations de poignets",
+  "groupe": "mobilite",
+  "muscles": [
+   "poignets"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 2,
+  "plage": {
+   "min": 10,
+   "max": 15
+  },
+  "repos": 0,
+  "etapes": [
+   "Joins les mains, doigts croisés.",
+   "Fais des cercles avec les poignets dans les deux sens.",
+   "Garde les épaules relâchées."
+  ],
+  "conseils": [
+   "À faire avant chaque séance de pompes, dips ou figures."
+  ],
+  "erreurs": [
+   "Forcer sur une douleur."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mobilite"
+ },
+ {
+  "id": "poignets-extension",
+  "nom": "Étirement des poignets au sol",
+  "groupe": "mobilite",
+  "muscles": [
+   "poignets",
+   "avant-bras"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 2,
+  "plage": {
+   "min": 15,
+   "max": 30
+  },
+  "repos": 0,
+  "etapes": [
+   "À quatre pattes, mains au sol, doigts vers les genoux.",
+   "Recule doucement le bassin vers les talons.",
+   "Tiens en respirant, puis change de position des mains."
+  ],
+  "conseils": [
+   "Intensité douce : tu dois sentir un étirement, pas de douleur."
+  ],
+  "erreurs": [
+   "Forcer d'un coup."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mobilite"
+ },
+ {
+  "id": "epaules-cercles",
+  "nom": "Cercles d'épaules",
+  "groupe": "mobilite",
+  "muscles": [
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 2,
+  "plage": {
+   "min": 10,
+   "max": 15
+  },
+  "repos": 0,
+  "etapes": [
+   "Debout, bras tendus sur les côtés.",
+   "Fais de grands cercles vers l'avant puis vers l'arrière.",
+   "Augmente l'amplitude peu à peu."
+  ],
+  "conseils": [
+   "Respire calmement."
+  ],
+  "erreurs": [
+   "Aller trop vite."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mobilite"
+ },
+ {
+  "id": "hanches-cercles",
+  "nom": "Cercles de hanches",
+  "groupe": "mobilite",
+  "muscles": [
+   "hanches"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 2,
+  "plage": {
+   "min": 8,
+   "max": 12
+  },
+  "repos": 0,
+  "etapes": [
+   "Debout, mains sur les hanches.",
+   "Dessine de grands cercles avec le bassin.",
+   "Change de sens après la moitié."
+  ],
+  "conseils": [
+   "Garde les genoux souples."
+  ],
+  "erreurs": [
+   "Cercles trop petits."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mobilite"
+ },
+ {
+  "id": "chat-vache",
+  "nom": "Chat-vache",
+  "groupe": "mobilite",
+  "muscles": [
+   "colonne",
+   "dos"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "reps",
+  "series": 2,
+  "plage": {
+   "min": 8,
+   "max": 12
+  },
+  "repos": 0,
+  "etapes": [
+   "À quatre pattes, mains sous les épaules.",
+   "Arrondis le dos en rentrant le ventre (chat).",
+   "Creuse le dos en levant la tête (vache) ; alterne doucement."
+  ],
+  "conseils": [
+   "Coordonne avec la respiration."
+  ],
+  "erreurs": [
+   "Mouvement brusque."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "mobilite"
+ },
+ {
+  "id": "etirement-pectoraux",
+  "nom": "Étirement des pectoraux",
+  "groupe": "mobilite",
+  "muscles": [
+   "pectoraux",
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 2,
+  "plage": {
+   "min": 20,
+   "max": 30
+  },
+  "repos": 0,
+  "etapes": [
+   "Place l'avant-bras contre un mur ou un montant, coude à hauteur d'épaule.",
+   "Tourne doucement le buste de l'autre côté.",
+   "Tiens l'étirement sans douleur, puis change de côté."
+  ],
+  "conseils": [
+   "Respire calmement, ne force jamais."
+  ],
+  "erreurs": [
+   "Forcer sur une épaule douloureuse."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "etirement"
+ },
+ {
+  "id": "etirement-ischios",
+  "nom": "Étirement des ischio-jambiers",
+  "groupe": "mobilite",
+  "muscles": [
+   "ischio-jambiers"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 2,
+  "plage": {
+   "min": 20,
+   "max": 30
+  },
+  "repos": 0,
+  "etapes": [
+   "Assis, une jambe tendue, l'autre repliée.",
+   "Penche le buste vers le pied avec le dos droit.",
+   "Tiens sans rebondir, puis change de jambe."
+  ],
+  "conseils": [
+   "Garde le dos plat."
+  ],
+  "erreurs": [
+   "Rebondir.",
+   "Dos très rond."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "etirement"
+ },
+ {
+  "id": "etirement-quadriceps",
+  "nom": "Étirement des quadriceps",
+  "groupe": "mobilite",
+  "muscles": [
+   "quadriceps"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 2,
+  "plage": {
+   "min": 20,
+   "max": 30
+  },
+  "repos": 0,
+  "etapes": [
+   "Debout, attrape ta cheville derrière toi.",
+   "Rapproche le talon du fessier, genoux joints.",
+   "Tiens, puis change de jambe."
+  ],
+  "conseils": [
+   "Appuie-toi à un mur pour l'équilibre."
+  ],
+  "erreurs": [
+   "Cambrer.",
+   "Genou qui part vers l'avant."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "etirement"
+ },
+ {
+  "id": "posture-enfant",
+  "nom": "Posture de l'enfant",
+  "groupe": "mobilite",
+  "muscles": [
+   "dos",
+   "épaules"
+  ],
+  "lieux": [
+   "maison",
+   "street"
+  ],
+  "difficulte": 1,
+  "type": "tenue",
+  "series": 2,
+  "plage": {
+   "min": 20,
+   "max": 40
+  },
+  "repos": 0,
+  "etapes": [
+   "À genoux, fesses sur les talons.",
+   "Étire les bras loin devant, front vers le sol.",
+   "Respire profondément et relâche le dos."
+  ],
+  "conseils": [
+   "Idéale en fin de séance pour récupérer."
+  ],
+  "erreurs": [
+   "Forcer sur une douleur de genou."
+  ],
+  "plusFacile": null,
+  "plusDur": null,
+  "substitut": {
+   "maison": null,
+   "street": null
+  },
+  "illustration": "etirement"
+ }
+]
