@@ -8,3 +8,5 @@ Task 2: Ruling: champ "titre" ajouté aux jours du programme et "description" au
 Task 2: complete (npm test → 11/11 pass, 74 exercices)
 Task 3: complete (npm test → 43/43 pass; CLE_PROFIL limite le calibrage aux exercices de base)
 Task 3: Ruling: buildSession dédoublonne par exerciceId (deux exos peuvent avoir le même substitut) et écarte un bloc sans substitut valide — coût: séance un peu plus courte
+Task 4: complete (npm test → 52/52 pass; backend IndexedDB vérifié seulement dans le navigateur, tâche 5)
+Task 4: Ruling: importAll re-valide avant d écrire et replaceAll remplace tout — coût: un import écrase l historique actuel (confirmation côté UI, tâche 8)
