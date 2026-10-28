@@ -6,3 +6,5 @@ Task 1: complete (npm test → 2/2 pass)
 Task 2: Ruling: paliers de tenue testés à 10 s partout (spec: ex. 10 s), reps pour kick-up/tractions/muscle-up — coût: ajuster data/figures.json
 Task 2: Ruling: champ "titre" ajouté aux jours du programme et "description" aux figures (affichage) — coût: aucun
 Task 2: complete (npm test → 11/11 pass, 74 exercices)
+Task 3: complete (npm test → 43/43 pass; CLE_PROFIL limite le calibrage aux exercices de base)
+Task 3: Ruling: buildSession dédoublonne par exerciceId (deux exos peuvent avoir le même substitut) et écarte un bloc sans substitut valide — coût: séance un peu plus courte
