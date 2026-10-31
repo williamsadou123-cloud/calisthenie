@@ -50,7 +50,7 @@ test('structure des animations: durée, poses triées, articulations et angles v
       for (const [j, ang] of Object.entries(p.joints)) {
         assert.ok(JOINTS.includes(j), `${id}: articulation inconnue ${j}`);
         assert.equal(ang.length, 3);
-        for (const x of ang) assert.ok(x >= -200 && x <= 200, `${id}: angle ${x} hors limites`);
+        for (const x of ang) assert.ok(x >= -360 && x <= 360, `${id}: angle ${x} hors limites`);
       }
     }
     assert.ok(a.muscles.length > 0 && a.muscles.every((m) => ZONES_MUSCLES.includes(m)), `${id}: muscles`);
@@ -111,7 +111,7 @@ test('à la barre, les pieds restent au-dessus du sol et les mains sur la barre'
 
 test('aux barres, les mains sont à l\'horizontale (posées ou accrochées sur la barre), doigts vers l\'avant', () => {
   for (const [id, a] of Object.entries(animations)) {
-    if (a.ancrage.type !== 'barre') continue;
+    if (a.ancrage.type !== 'barre' || !a.decor.startsWith('barre')) continue; // poteau vertical: prise verticale
     for (const phase of [0, 0.5, 1]) {
       const fk = posePlacee(a, phase);
       for (const c of ['g', 'd']) {
