@@ -140,7 +140,8 @@ function draw(root, ctx) {
       <button class="petit" id="stop">Arrêter</button>
     </div>
     ${suivant?.kind === 'bloc' ? `<p class="doux" style="margin-top:12px">Ensuite : ${esc(par[suivant.exerciceId].nom)}</p>` : ''}`;
-  import('../illustrations.js').then((m) => { const z = root.querySelector('#illu'); if (z) z.innerHTML = m.illustration(e.illustration); }).catch(() => { const z = root.querySelector('#illu'); if (z) z.remove(); });
+  // Démo animée si elle existe (sinon le dessin); si tout échoue, la zone disparaît sans bloquer la séance.
+  import('../anim/viewer.js').then((m) => { const z = root.querySelector('#illu'); if (z) return m.montrerAnimation(z, e, ctx.data); }).catch(() => { const z = root.querySelector('#illu'); if (z) z.remove(); });
 
   const val = root.querySelector('#val');
   if (step.type === 'tenue') {

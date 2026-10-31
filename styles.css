@@ -59,3 +59,9 @@ nav#nav button.actif { background: var(--carte2); color: var(--accent); font-wei
 .calendrier .jour.vide { background: transparent; }
 details summary { cursor: pointer; padding: 8px 0; }
 ul { padding-left: 20px; margin: 6px 0; }
+
+/* Démo animée (mannequin 3D) */
+.demo-scene { width: 100%; min-height: 240px; border-radius: var(--rayon); overflow: hidden; background: radial-gradient(circle at 50% 35%, var(--carte2), var(--carte)); }
+.demo-scene canvas { display: block; width: 100%; height: auto; }
+.demo-barre { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.demo-muscles { margin: 8px 0 0; }

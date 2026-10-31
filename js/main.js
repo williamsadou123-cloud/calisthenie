@@ -1,4 +1,5 @@
 import { openStore } from './storage.js';
+import { gestionnaire } from './anim/viewer.js';
 
 const VUES = ['aujourdhui', 'seance', 'figures', 'exercices', 'progres', 'depart'];
 const racine = document.getElementById('vue');
@@ -9,6 +10,7 @@ async function showView(name) {
   const onglet = name === 'depart' ? 'aujourdhui' : name;
   document.querySelectorAll('#nav button').forEach((b) => b.classList.toggle('actif', b.dataset.vue === onglet));
   const mod = await import(`./views/${name}.js`);
+  gestionnaire.detruire(); // un seul rendu 3D à la fois, libéré quand on quitte l'écran
   racine.innerHTML = '';
   await mod.render(racine, ctx);
   window.scrollTo(0, 0);
@@ -35,8 +37,8 @@ async function charger(f) {
 
 async function boot() {
   try {
-    const [exercices, programme, figures] = await Promise.all(['exercices', 'programme', 'figures'].map(charger));
-    ctx.data = { exercices, programme, figures };
+    const [exercices, programme, figures, animations] = await Promise.all(['exercices', 'programme', 'figures', 'animations'].map(charger));
+    ctx.data = { exercices, programme, figures, animations };
     const { store, persistant } = await openStore();
     ctx.store = store;
     ctx.persistant = persistant;

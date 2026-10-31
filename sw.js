@@ -1,4 +1,4 @@
-const CACHE_NAME = 'calisthenie-v1';
+const CACHE_NAME = 'calisthenie-v2';
 const ASSETS = [
   './',
   'index.html',
@@ -13,6 +13,14 @@ const ASSETS = [
   'js/dom.js',
   'js/feedback.js',
   'js/illustrations.js',
+  'js/anim/pose-math.js',
+  'js/anim/skeleton.js',
+  'js/anim/anchor.js',
+  'js/anim/controller.js',
+  'js/anim/mannequin.js',
+  'js/anim/decor.js',
+  'js/anim/viewer.js',
+  'vendor/three/three.module.min.js',
   'js/views/aujourdhui.js',
   'js/views/seance.js',
   'js/views/exercices.js',
@@ -22,6 +30,7 @@ const ASSETS = [
   'data/exercices.json',
   'data/programme.json',
   'data/figures.json',
+  'data/animations.json',
   'icons/icon-192.png',
   'icons/icon-512.png',
 ];

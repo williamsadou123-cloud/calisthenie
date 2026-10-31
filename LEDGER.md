@@ -39,3 +39,7 @@ Task 4: Ruling: tests corpsDroit sur l axe cou-bassin-cheville (épaule gauche d
 Task 4: Ruling: poses réglées par recherche numérique (banc d essai hors dépôt) pour garder mains/pieds plantés: pompes incliné 17,5° en haut, coude 64° en bas; tractions menton à 2,25 m; dips coude 85° - cout: à valider visuellement en T7
 Task 4: complete (npm test -> 89/89 pass)
 Task 5: complete (npm test -> 97/97 pass)
+Task 6: Ruling: creerDecor/creerMannequin renvoient {groupe, liberer} (et non un Group nu) pour libérer la mémoire - cout: aucun
+Task 6: Ruling: les parcours de figures ouvrent la fiche d exercice (qui montre la démo) au lieu d un rendu par palier: évite plusieurs contextes WebGL dans une liste - cout: un clic de plus
+Task 6: Ruling: ajout d un garde de génération dans montrerAnimation (chargement tardif ne détruit pas le rendu récent) + paramètre env.animer pour le tester - cout: aucun
+Task 6: complete (npm test -> 104/104 pass; rendu 3D à vérifier dans le navigateur, T7)

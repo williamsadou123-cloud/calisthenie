@@ -64,7 +64,7 @@ function fiche(root, ctx, e, par) {
       <span class="pastille">Niveau ${e.difficulte}</span>
       ${e.lieux.map((l) => `<span class="pastille">${LIEUX[l]}</span>`).join('')}
     </p>
-    <div class="carte">${illustration(e.illustration)}</div>
+    <div class="carte" id="demo">${illustration(e.illustration)}</div>
     <p class="doux">Muscles : ${esc(e.muscles.join(', '))}</p>
     <p><b>Conseil :</b> ${e.series} séries de ${fmtPlage(e.plage, e.type)}, repos ${e.repos} s.</p>
     <h2>Comment faire</h2>
@@ -72,6 +72,8 @@ function fiche(root, ctx, e, par) {
     ${e.conseils.length ? `<h2>Points clés</h2><ul>${e.conseils.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
     ${e.erreurs.length ? `<h2>Erreurs fréquentes</h2><ul>${e.erreurs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
     <div class="grille" style="margin-top:16px">${lien(e.plusFacile, 'Plus facile')}${lien(e.plusDur, 'Plus difficile')}</div>`;
+  // Démo animée si elle existe: le dessin ci-dessus reste affiché en attendant et en cas d'échec.
+  import('../anim/viewer.js').then((m) => m.montrerAnimation(root.querySelector('#demo'), e, ctx.data)).catch(() => {});
   root.querySelector('#retour').addEventListener('click', () => { ctx.exerciceOuvert = null; render(root, ctx); });
   root.querySelectorAll('[data-ouvrir]').forEach((b) => b.addEventListener('click', () => {
     ctx.exerciceOuvert = b.dataset.ouvrir;
