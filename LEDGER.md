@@ -29,3 +29,7 @@ Final review: self-review (aucun sous-agent lancé)
 Pre-flight: T2 consomme Joints (T1); T3 consomme FK (T2); T4 consomme JOINTS/computeFK/ancrer (T2,T3); T6 consomme tout. Interfaces alignees sur le plan.
 Ruling: ledger dans LEDGER.md de l appli (le plan est hors depot git, pas de scripts task-start/task-done) - cout: aucun
 Task 1: Ruling: le test du plan loopPhase(3,2)=0.5 est faux (3 s = sommet de la 2e boucle) - remplace par loopPhase(2.5,2)=0.5 et loopPhase(3,2)=1 - cout: aucun
+Task 1: complete (npm test -> 60/60 pass)
+Task 2: Ruling: bassin +90 (et non -90 comme dans le plan) incline le corps vers l avant face au sol; genou fléchi = rx positif, coude/hanche fléchis = rx négatif - cout: les poses de T4 suivent ces signes
+Task 2: Ruling: proportions ajustées (abdomen .21, poitrine .26, tete .23) pour une taille exacte de 1,75 m; articulations _d en miroir (ry,rz inversés) pour que mêmes angles = pose symétrique - cout: aucun
+Task 2: complete (npm test -> 70/70 pass)
