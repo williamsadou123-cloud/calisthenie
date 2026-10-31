@@ -24,3 +24,8 @@ Task 9: complete (hors-ligne vérifié serveur arrêté: rechargement, exercices
 Task 9: Ruling: README ajoute la consigne "changer CACHE_NAME à chaque mise à jour" car la revalidation en arrière-plan ne rafraîchit que les fichiers rouverts — coût: un oubli laisse d anciens fichiers jusqu à la 2e ouverture
 Final: bug trouvé en auto-relecture: fin de repos sur un autre onglet écrasait l écran — corrigé (tick sans écran affiché), vérifié navigateur ; ajout bouton Refaire le test de départ
 Final review: self-review (aucun sous-agent lancé)
+
+# Plan animations: docs/superpowers/plans/2026-10-31-animations-mannequin-3d.md (dans atelier-graphique)
+Pre-flight: T2 consomme Joints (T1); T3 consomme FK (T2); T4 consomme JOINTS/computeFK/ancrer (T2,T3); T6 consomme tout. Interfaces alignees sur le plan.
+Ruling: ledger dans LEDGER.md de l appli (le plan est hors depot git, pas de scripts task-start/task-done) - cout: aucun
+Task 1: Ruling: le test du plan loopPhase(3,2)=0.5 est faux (3 s = sommet de la 2e boucle) - remplace par loopPhase(2.5,2)=0.5 et loopPhase(3,2)=1 - cout: aucun
