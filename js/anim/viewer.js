@@ -113,7 +113,7 @@ async function animer(zone, exercice, animation, rendu, doc) {
   contrejour.position.set(0, 3, -3);
   scene.add(contrejour);
 
-  const decor = creerDecor(animation.decor);
+  const decor = creerDecor(animation.decor, animation.decorPos);
   const mannequin = creerMannequin();
   scene.add(decor.groupe);
   scene.add(mannequin.groupe);

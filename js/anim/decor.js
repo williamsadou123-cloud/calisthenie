@@ -10,7 +10,8 @@ function cylindre(rayon, longueur, matiere) {
   return m;
 }
 
-export function creerDecor(type) {
+// pos: [x, z] de l'accessoire (banc, mur, table, poteau); la barre fixe et les barres parallèles restent centrées.
+export function creerDecor(type, pos = [0, 0]) {
   const groupe = new THREE.Group();
   const metal = new THREE.MeshStandardMaterial({ color: METAL, roughness: 0.35, metalness: 0.7 });
 
@@ -51,9 +52,35 @@ export function creerDecor(type) {
     }
   }
 
+  const bois = new THREE.MeshStandardMaterial({ color: 0x6b5d4f, roughness: 0.8, metalness: 0 });
+  const boite = (l, h, p, x, y, z) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(l, h, p), bois);
+    m.position.set(x, y, z);
+    m.castShadow = true;
+    m.receiveShadow = true;
+    groupe.add(m);
+  };
+  if (type === 'banc') boite(0.9, 0.45, 0.32, pos[0], 0.225, pos[1]);
+  if (type === 'table') {
+    boite(1.3, 0.04, 0.75, pos[0], 0.73, pos[1]);
+    for (const dx of [-0.6, 0.6]) for (const dz of [-0.32, 0.32]) boite(0.05, 0.71, 0.05, pos[0] + dx, 0.355, pos[1] + dz);
+  }
+  if (type === 'mur') {
+    const mur = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 2.8), new THREE.MeshStandardMaterial({ color: 0x3a4150, roughness: 0.9, side: THREE.DoubleSide }));
+    mur.position.set(pos[0], 1.4, pos[1]);
+    mur.receiveShadow = true;
+    groupe.add(mur);
+  }
+  if (type === 'poteau') {
+    const poteau = cylindre(0.04, 2.6, metal);
+    poteau.position.set(pos[0], 1.3, pos[1]);
+    groupe.add(poteau);
+  }
+
   return {
     groupe,
     liberer() {
+      bois.dispose();
       groupe.traverse((o) => {
         if (o.geometry) o.geometry.dispose();
         if (o.material) o.material.dispose();

@@ -58,3 +58,9 @@ Final: minor (deferred): M-6 canvas sans alternative textuelle (role="img" + ari
 Final: minor (deferred): M-7 main.js importe viewer.js statiquement (un module cassé bloquerait le démarrage)
 Final: minor (deferred): M-8 prefers-reduced-motion lu une seule fois à la création
 Final: minor (deferred): M-9 champ distance de VUES inutilisé (code mort)
+
+# Plan: toutes les animations (69 exercices restants), demande utilisateur 2026-10-31
+Base: 156486c. Constat RED: 69/74 exercices sans animation (poussée 9, tirage 10, jambes 13, gainage 7, équilibre 6, figures 14, mobilité 10).
+Ruling: exercices "explosifs"/"sautés" animés comme leur version de base (durée plus courte), sans phase aérienne - cout: pas de saut visible
+Ruling: variantes qui ne diffèrent que par la prise (supination, négatives, assistées) réutilisent les poses de base avec durée/muscles propres - cout: différence peu visible
+Engine: tests génériques appuis (chaque point d appui déclaré touche le sol/support dans chaque pose clé), decor banc/mur/table/poteau + decorPos

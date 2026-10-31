@@ -11,6 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const lire = (f) => JSON.parse(readFileSync(join(root, f), 'utf8'));
 const animations = lire('data/animations.json').exercices;
 const exercices = lire('data/exercices.json');
+const DECORS = ['sol', 'barre-fixe', 'barres-paralleles', 'banc', 'mur', 'table', 'poteau'];
 const ECHANTILLON = ['pompes', 'tractions-pronation', 'dips-barres', 'planche-gainage', 'handstand-libre'];
 
 const BARRE = (a) => a.ancrage.y;
@@ -39,7 +40,8 @@ test('structure des animations: durée, poses triées, articulations et angles v
     assert.ok(a.duree >= 1 && a.duree <= 6, `${id}: durée`);
     assert.ok(['boucle', 'tenue'].includes(a.mode), `${id}: mode`);
     assert.ok(['profil', 'face', 'trois-quarts'].includes(a.vue), `${id}: vue`);
-    assert.ok(['sol', 'barre-fixe', 'barres-paralleles'].includes(a.decor), `${id}: décor`);
+    assert.ok(DECORS.includes(a.decor), `${id}: décor`);
+    if (a.decorPos !== undefined) assert.ok(Array.isArray(a.decorPos) && a.decorPos.length === 2 && a.decorPos.every(Number.isFinite), `${id}: decorPos [x, z]`);
     assert.ok(['sol', 'barre'].includes(a.ancrage.type), `${id}: ancrage`);
     assert.equal(a.poses[0].t, 0, `${id}: première pose à t=0`);
     assert.equal(a.poses.at(-1).t, 1, `${id}: dernière pose à t=1`);
@@ -75,13 +77,33 @@ test('le point d\'appui le plus bas est une main, un pied ou un genou (jamais la
   }
 });
 
+const appuisDe = (a) => (a.appuis || []).map((x) => (typeof x === 'string' ? { p: x, y: 0 } : { p: x.p, y: x.y ?? 0 }));
+
+test('toute animation ancrée au sol déclare ses points d\'appui', () => {
+  for (const [id, a] of Object.entries(animations)) {
+    if (a.ancrage.type === 'sol') assert.ok(appuisDe(a).length >= 1, `${id}: appuis manquants`);
+  }
+});
+
+test('chaque point d\'appui déclaré touche vraiment le sol (ou son support) dans chaque pose clé', () => {
+  for (const [id, a] of Object.entries(animations)) {
+    for (const { p, y } of appuisDe(a)) {
+      for (const pose of a.poses) {
+        const fk = posePlacee(a, pose.t);
+        assert.ok(fk[p], `${id}: point inconnu ${p}`);
+        assert.ok(Math.abs(fk[p].pos[1] - y) <= 0.04, `${id} @t=${pose.t}: ${p} à ${fk[p].pos[1].toFixed(3)} m, attendu ${y} m`);
+      }
+    }
+  }
+});
+
 test('à la barre, les pieds restent au-dessus du sol et les mains sur la barre', () => {
   for (const [id, a] of Object.entries(animations)) {
     if (a.ancrage.type !== 'barre') continue;
     for (const phase of [0, 0.5, 1]) {
       const fk = posePlacee(a, phase);
       const bas = Math.min(...Object.values(fk).map((n) => n.pos[1]));
-      assert.ok(bas >= 0.05, `${id} @${phase}: pieds à ${bas.toFixed(2)} m du sol`);
+      assert.ok(bas >= (a.appuis ? -0.04 : 0.05), `${id} @${phase}: pieds à ${bas.toFixed(2)} m du sol`);
       assert.ok(Math.abs((fk.main_g.pos[1] + fk.main_d.pos[1]) / 2 - BARRE(a)) < 0.01, `${id}: mains hors de la barre`);
     }
   }

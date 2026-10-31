@@ -86,6 +86,12 @@
       ]
      }
     }
+   ],
+   "appuis": [
+    "main_g",
+    "main_d",
+    "pointe_g",
+    "pointe_d"
    ]
   },
   "tractions-pronation": {
@@ -397,6 +403,12 @@
       ]
      }
     }
+   ],
+   "appuis": [
+    "coude_g",
+    "coude_d",
+    "pointe_g",
+    "pointe_d"
    ]
   },
   "handstand-libre": {
@@ -493,6 +505,10 @@
       ]
      }
     }
+   ],
+   "appuis": [
+    "main_g",
+    "main_d"
    ]
   }
  }
