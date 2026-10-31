@@ -47,6 +47,13 @@ test('sol avec appui sur les mains: mains fixes en x/z d\'une pose à l\'autre',
   }
 });
 
+test('sol avec hauteur: un corps allongé repose à l\'épaisseur demandée, sans s\'enfoncer', () => {
+  const fk = ancrer(computeFK({ bassin: [90, 0, 0] }), { type: 'sol', hauteur: 0.11 });
+  proche(Math.min(...ys(fk)), 0.11);
+  const avecAppui = ancrer(computeFK({ bassin: [-90, 0, 0] }), { type: 'sol', appui: 'main', hauteur: 0.11 });
+  proche(Math.min(...ys(avecAppui)), 0.11);
+});
+
 test('ancrer ne modifie pas l\'objet d\'entrée', () => {
   const brut = computeFK({ bassin: [90, 0, 0] });
   const copie = JSON.stringify(brut);

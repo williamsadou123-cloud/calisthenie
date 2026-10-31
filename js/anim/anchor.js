@@ -6,7 +6,8 @@ function decale(fk, d) {
   return out;
 }
 
-// ancrage: { type: 'sol', appui?: 'main' | 'pointe' | ... } | { type: 'barre', y, z }
+// ancrage: { type: 'sol', appui?: 'main' | 'pointe' | ..., hauteur?: m } | { type: 'barre', y, z }
+// `hauteur`: le point le plus bas est placé à cette hauteur (corps allongé: ~0,11 m, la moitié de son épaisseur).
 // `appui` fixe aussi x et z: le milieu des deux points `<appui>_g` / `<appui>_d` est placé en (0, 0).
 export function ancrer(fk, ancrage) {
   if (ancrage.type === 'barre') {
@@ -14,7 +15,7 @@ export function ancrer(fk, ancrage) {
     const d = fk.main_d.pos;
     return decale(fk, [-(g[0] + d[0]) / 2, ancrage.y - (g[1] + d[1]) / 2, ancrage.z - (g[2] + d[2]) / 2]);
   }
-  const bas = Math.min(...Object.values(fk).map((n) => n.pos[1]));
+  const bas = Math.min(...Object.values(fk).map((n) => n.pos[1])) - (ancrage.hauteur || 0);
   if (ancrage.appui) {
     const g = fk[`${ancrage.appui}_g`].pos;
     const d = fk[`${ancrage.appui}_d`].pos;

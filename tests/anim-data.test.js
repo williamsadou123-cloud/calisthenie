@@ -68,7 +68,7 @@ test('en mode boucle, le début et le sommet du mouvement sont différents', () 
 
 test('le point d\'appui le plus bas est une main, un pied ou un genou (jamais la tête ni le tronc)', () => {
   for (const [id, a] of Object.entries(animations)) {
-    if (a.ancrage.type !== 'sol') continue;
+    if (a.ancrage.type !== 'sol' || a.ancrage.hauteur) continue; // corps allongé: le tronc repose au sol
     for (const phase of [0, 0.25, 0.5, 0.75, 1]) {
       const fk = posePlacee(a, phase);
       const [nom] = Object.entries(fk).sort((p, q) => p[1].pos[1] - q[1].pos[1])[0];
