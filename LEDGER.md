@@ -43,3 +43,5 @@ Task 6: Ruling: creerDecor/creerMannequin renvoient {groupe, liberer} (et non un
 Task 6: Ruling: les parcours de figures ouvrent la fiche d exercice (qui montre la démo) au lieu d un rendu par palier: évite plusieurs contextes WebGL dans une liste - cout: un clic de plus
 Task 6: Ruling: ajout d un garde de génération dans montrerAnimation (chargement tardif ne détruit pas le rendu récent) + paramètre env.animer pour le tester - cout: aucun
 Task 6: complete (npm test -> 104/104 pass; rendu 3D à vérifier dans le navigateur, T7)
+Task 7: Ruling: banc de rendu temporaire (hors dépôt) pour juger les poses; corrections visuelles: mains horizontales aux barres (+test), extrémités non arrondies (rainures), libellés muscles accentués (+test), forceContextLoss, cadrage 1.0 - cout: aucun
+Task 7: complete (npm test -> 107/107 pass; navigateur: 5 poses vérifiées, boutons, rafale d écrans = 1 canvas, 375 px sans défilement; hors-ligne et SW NON testables dans le navigateur intégré, couverts seulement par le test ASSETS)

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { JOINTS, ZONES_MUSCLES, PROPORTIONS, computeFK } from '../js/anim/skeleton.js';
+import { JOINTS, ZONES_MUSCLES, LIBELLES_MUSCLES, PROPORTIONS, computeFK } from '../js/anim/skeleton.js';
 
 const proche = (a, b, eps = 0.01) => assert.ok(Math.abs(a - b) <= eps, `${a} ≠ ${b} (±${eps})`);
 const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
@@ -89,4 +89,10 @@ test('longueurs d\'os conservées dans une pose quelconque', () => {
   proche(dist(fk.poignet_g.pos, fk.coude_g.pos), PROPORTIONS.avantBras, 0.0001);
   proche(dist(fk.genou_d.pos, fk.hanche_d.pos), PROPORTIONS.cuisse, 0.0001);
   proche(dist(fk.cheville_d.pos, fk.genou_d.pos), PROPORTIONS.tibia, 0.0001);
+});
+
+test('chaque zone musculaire a un libellé français lisible (avec accents)', () => {
+  for (const z of ZONES_MUSCLES) assert.ok(LIBELLES_MUSCLES[z], `${z} sans libellé`);
+  assert.equal(LIBELLES_MUSCLES.epaules, 'épaules');
+  assert.equal(LIBELLES_MUSCLES.ischios, 'ischio-jambiers');
 });

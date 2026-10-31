@@ -14,6 +14,11 @@ export const ZONES_MUSCLES = [
   'abdominaux', 'fessiers', 'quadriceps', 'ischios', 'mollets',
 ];
 
+export const LIBELLES_MUSCLES = {
+  pectoraux: 'pectoraux', epaules: 'épaules', biceps: 'biceps', triceps: 'triceps', dos: 'dos',
+  abdominaux: 'abdominaux', fessiers: 'fessiers', quadriceps: 'quadriceps', ischios: 'ischio-jambiers', mollets: 'mollets',
+};
+
 // Mètres, pour une taille de 1,75 m.
 export const PROPORTIONS = {
   abdomen: 0.21, poitrine: 0.26, cou: 0.10, tete: 0.23,

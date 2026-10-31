@@ -1,7 +1,7 @@
 // Lecteur d'animation: choisit entre animation 3D, pose fixe et dessin SVG, et gère le cycle de vie.
 // three.js n'est chargé que si une animation est réellement affichée.
 import { illustration } from '../illustrations.js';
-import { computeFK } from './skeleton.js';
+import { computeFK, LIBELLES_MUSCLES } from './skeleton.js';
 import { ancrer } from './anchor.js';
 import { interpolatePose, loopPhase } from './pose-math.js';
 import {
@@ -78,7 +78,7 @@ async function animer(zone, exercice, animation, rendu, doc) {
   const btnPause = zone.querySelector('[data-act="pause"]');
   const btnRalenti = zone.querySelector('[data-act="ralenti"]');
   const btnVue = zone.querySelector('[data-act="vue"]');
-  zone.querySelector('.demo-muscles').textContent = `Muscles travaillés : ${animation.muscles.join(', ')}`;
+  zone.querySelector('.demo-muscles').textContent = `Muscles travaillés : ${animation.muscles.map((m) => LIBELLES_MUSCLES[m] || m).join(', ')}`;
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, 2));
@@ -108,7 +108,7 @@ async function animer(zone, exercice, animation, rendu, doc) {
 
   const camera = new THREE.PerspectiveCamera(35, 4 / 3, 0.1, 30);
   const { centre, rayon } = cadrage(animation);
-  const distance = (rayon / Math.tan((camera.fov * Math.PI) / 360)) * 1.12;
+  const distance = (rayon / Math.tan((camera.fov * Math.PI) / 360)) * 1.0;
 
   let lecteur = creerLecteur(animation.vue);
   let raf = 0;
@@ -184,6 +184,7 @@ async function animer(zone, exercice, animation, rendu, doc) {
       mannequin.liberer();
       decor.liberer();
       renderer.dispose();
+      renderer.forceContextLoss(); // libère le contexte WebGL tout de suite (les téléphones en autorisent peu)
       renderer.domElement.remove();
     },
   };

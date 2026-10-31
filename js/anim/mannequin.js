@@ -7,15 +7,16 @@ const PEAU = 0xcfc8c0;
 const MUSCLE = 0xc3bab0; // un peu plus sombre que la peau: relief discret
 const ACCENT = 0xff9f43; // couleur d'accent de l'appli (muscles travaillés)
 
-// Volume de révolution le long de +y (0 → longueur), rayon qui varie, extrémités arrondies.
-function volume(longueur, r0, r1, bombe = 0, bombeEn = 0.4) {
+// Volume de révolution le long de +y (0 → longueur), rayon qui varie. Extrémités droites par défaut:
+// les boules d'articulation les recouvrent, et des bouts arrondis creuseraient des rainures sombres.
+function volume(longueur, r0, r1, bombe = 0, bombeEn = 0.4, arrondi = false) {
   const pts = [new THREE.Vector2(0, 0)];
   const n = 18;
   for (let i = 0; i <= n; i++) {
     const t = i / n;
     let r = r0 + (r1 - r0) * t + bombe * Math.exp(-((t - bombeEn) ** 2) / 0.05);
     const bord = Math.min(t, 1 - t) / 0.12;
-    if (bord < 1) r *= Math.sqrt(Math.max(0, 1 - (1 - bord) ** 2));
+    if (arrondi && bord < 1) r *= Math.sqrt(Math.max(0, 1 - (1 - bord) ** 2));
     pts.push(new THREE.Vector2(Math.max(r, 0.001), t * longueur));
   }
   pts.push(new THREE.Vector2(0, longueur));

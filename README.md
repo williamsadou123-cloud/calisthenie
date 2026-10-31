@@ -59,7 +59,19 @@ Rien n'est publié automatiquement. Étapes :
 3. Sur GitHub : Settings → Pages → « Deploy from a branch » → branche `main`, dossier `/ (root)`.
 4. Ouvre le lien `https://<ton-compte>.github.io/calisthenie/` sur le téléphone, puis installe l'appli.
 
+## Animations des exercices (mannequin 3D)
+
+Les fiches d'exercices et la séance montrent un mannequin 3D qui fait le mouvement en boucle (pause, ralenti, changement de vue).
+Il est construit en code (aucune vidéo, aucun modèle externe) avec three.js (`vendor/three/`, licence MIT).
+Si l'exercice n'a pas d'animation, ou si le téléphone ne gère pas WebGL, l'ancien dessin s'affiche. Avec « réduire les animations » activé, une pose fixe s'affiche.
+
+Pour l'instant 5 exercices sont animés : pompes classiques, tractions (prise pronation), dips aux barres, planche gainage, équilibre sur les mains libre.
+
+Ajouter une animation : ajouter l'id de l'exercice dans `data/animations.json` (durée, mode `boucle` ou `tenue`, vue, décor, ancrage, poses clés en degrés, muscles).
+Repères des angles : repère main droite, y vers le haut, z vers l'avant du personnage ; `bassin: [90,0,0]` couche le corps face au sol ; fléchir un genou = rx positif, fléchir un coude ou une hanche = rx négatif.
+`npm test` vérifie la géométrie de chaque pose des 5 exercices (bras tendus, mains au sol, tête au-dessus de la barre…). Après chaque changement, passe `CACHE_NAME` dans `sw.js` à `calisthenie-v3`, etc.
+
 ## Ce qui n'a pas pu être testé ici
 
 Le comportement sur un vrai téléphone : installation sur l'écran d'accueil, écran maintenu allumé (Wake Lock), vibration,
-purge du stockage par iOS. L'appli fonctionne sans ces fonctions si elles manquent.
+purge du stockage par iOS, et la fluidité des animations 3D sur un téléphone d'entrée de gamme. L'appli fonctionne sans ces fonctions si elles manquent.

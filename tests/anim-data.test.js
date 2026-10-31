@@ -87,6 +87,19 @@ test('à la barre, les pieds restent au-dessus du sol et les mains sur la barre'
   }
 });
 
+test('aux barres, les mains sont à l\'horizontale (posées ou accrochées sur la barre), doigts vers l\'avant', () => {
+  for (const [id, a] of Object.entries(animations)) {
+    if (a.ancrage.type !== 'barre') continue;
+    for (const phase of [0, 0.5, 1]) {
+      const fk = posePlacee(a, phase);
+      for (const c of ['g', 'd']) {
+        assert.ok(Math.abs(fk[`doigts_${c}`].pos[1] - fk[`poignet_${c}`].pos[1]) < 0.03, `${id} @${phase}: main ${c} pas horizontale`);
+        assert.ok(fk[`doigts_${c}`].pos[2] > fk[`poignet_${c}`].pos[2] + 0.1, `${id} @${phase}: doigts ${c} pas vers l'avant`);
+      }
+    }
+  }
+});
+
 test('pompes: bras tendus en haut, coudes ≤ 100° et poitrine basse en bas, corps droit', () => {
   const a = animations.pompes;
   const haut = posePlacee(a, 0);

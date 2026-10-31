@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -27,4 +27,16 @@ test('test_assets_exist', () => {
 test('cache_name_defini', () => {
   const src = readFileSync(join(root, 'sw.js'), 'utf8');
   assert.match(src, /const CACHE_NAME = 'calisthenie-v\d+'/);
+});
+
+test('tous les fichiers des animations (js/anim, vendor, données) sont dans ASSETS pour le hors-ligne', () => {
+  const src = readFileSync(join(root, 'sw.js'), 'utf8');
+  const m = src.match(/const ASSETS = \[([\s\S]*?)\];/);
+  const list = [...m[1].matchAll(/'([^']+)'/g)].map((x) => x[1]);
+  const attendus = [
+    ...readdirSync(join(root, 'js', 'anim')).map((f) => `js/anim/${f}`),
+    'vendor/three/three.module.min.js',
+    'data/animations.json',
+  ];
+  for (const f of attendus) assert.ok(list.includes(f), `${f} absent de ASSETS`);
 });
