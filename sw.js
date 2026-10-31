@@ -12,6 +12,7 @@ const ASSETS = [
   'js/storage.js',
   'js/dom.js',
   'js/feedback.js',
+  'js/illustrations.js',
   'js/views/aujourdhui.js',
   'js/views/seance.js',
   'js/views/exercices.js',

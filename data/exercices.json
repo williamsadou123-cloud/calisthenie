@@ -1778,7 +1778,7 @@
    "maison": null,
    "street": null
   },
-  "illustration": "mur"
+  "illustration": "chandelle"
  },
  {
   "id": "tap-epaules",
@@ -1860,7 +1860,7 @@
    "maison": null,
    "street": null
   },
-  "illustration": "mur"
+  "illustration": "wall-walk"
  },
  {
   "id": "handstand-dos-mur",

@@ -14,3 +14,7 @@ Task 5: complete (vérifié navigateur intégré: test de départ, profil en Ind
 Task 6: complete (vérifié navigateur: séance complète, arrêt partiel enregistré terminee=false, chrono, wakeLock/vibrate supprimés; bug corrigé: startSession réinitialise ctx.run)
 Task 6: Ruling: la recommandation "variante plus dure" est affichée seulement, non appliquée automatiquement au programme (spec: "l appli propose") — coût: changer de variante se fait à la main
 Task 5: note: le service worker ne s enregistre pas dans le navigateur intégré ("error fetching the script"), à retester en T9
+Task 7: complete (npm test 55/55; navigateur: recherche, filtres, fiche, liens plus facile/dur, 26 silhouettes vérifiées en capture)
+Task 7: Ruling: filtre "muscle" = famille (groupe) + recherche texte sur les muscles ciblés — coût: pas de liste de muscles fins
+Task 7: Ruling: clés d illustration chandelle et wall-walk ajoutées (au lieu de réutiliser mur) — coût: aucun
+Final minor candidate: silhouettes SVG très simples (handstand, drapeau, muscle-up approximatifs)
