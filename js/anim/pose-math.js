@@ -34,3 +34,16 @@ export function interpolatePose(poses, phase) {
   }
   return out;
 }
+
+// Décalage vertical (m) d'une pose, interpolé comme les angles; une pose sans `lift` vaut 0.
+export function interpolateLift(poses, phase) {
+  const p = borne(phase, 0, 1);
+  let i = 0;
+  while (i < poses.length - 2 && p > poses[i + 1].t) i++;
+  const a = poses[i];
+  const b = poses[Math.min(i + 1, poses.length - 1)];
+  const span = b.t - a.t;
+  const k = span > 0 ? ease(borne((p - a.t) / span, 0, 1)) : 1;
+  const la = a.lift || 0;
+  return la + ((b.lift || 0) - la) * k;
+}

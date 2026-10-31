@@ -4,8 +4,8 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { JOINTS, ZONES_MUSCLES, computeFK } from '../js/anim/skeleton.js';
-import { ancrer } from '../js/anim/anchor.js';
-import { interpolatePose } from '../js/anim/pose-math.js';
+import { ancrer, lifter } from '../js/anim/anchor.js';
+import { interpolatePose, interpolateLift } from '../js/anim/pose-math.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const lire = (f) => JSON.parse(readFileSync(join(root, f), 'utf8'));
@@ -15,7 +15,7 @@ const DECORS = ['sol', 'barre-fixe', 'barres-paralleles', 'banc', 'mur', 'table'
 const ECHANTILLON = ['pompes', 'tractions-pronation', 'dips-barres', 'planche-gainage', 'handstand-libre'];
 
 const BARRE = (a) => a.ancrage.y;
-const posePlacee = (a, phase) => ancrer(computeFK(interpolatePose(a.poses, phase)), a.ancrage);
+const posePlacee = (a, phase) => lifter(ancrer(computeFK(interpolatePose(a.poses, phase)), a.ancrage), interpolateLift(a.poses, phase));
 const angle = (a, b, c) => {
   const u = [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
   const v = [c[0] - b[0], c[1] - b[1], c[2] - b[2]];

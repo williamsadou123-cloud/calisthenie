@@ -23,3 +23,8 @@ export function ancrer(fk, ancrage) {
   }
   return decale(fk, [0, -bas, 0]);
 }
+
+// Soulève tout le corps de `dy` mètres (pose posée sur un support surélevé, ex. un banc).
+export function lifter(fk, dy) {
+  return dy ? decale(fk, [0, dy, 0]) : fk;
+}

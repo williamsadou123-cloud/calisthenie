@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { computeFK } from '../js/anim/skeleton.js';
-import { ancrer } from '../js/anim/anchor.js';
+import { ancrer, lifter } from '../js/anim/anchor.js';
 
 const proche = (a, b, eps = 0.001) => assert.ok(Math.abs(a - b) <= eps, `${a} ≠ ${b} (±${eps})`);
 const ys = (fk) => Object.values(fk).map((p) => p.pos[1]);
@@ -60,4 +60,15 @@ test('ancrer ne modifie pas l\'objet d\'entrée', () => {
   ancrer(brut, { type: 'sol' });
   ancrer(brut, { type: 'barre', y: 2, z: 0.3 });
   assert.equal(JSON.stringify(brut), copie);
+});
+
+test('lifter: décale tout le corps vers le haut sans toucher x ni z ni l\'entrée', () => {
+  const fk = ancrer(computeFK({}), { type: 'sol' });
+  const copie = JSON.stringify(fk);
+  const haut = lifter(fk, 0.45);
+  proche(Math.min(...ys(haut)), 0.45);
+  proche(haut.main_g.pos[0], fk.main_g.pos[0], 1e-9);
+  proche(haut.main_g.pos[2], fk.main_g.pos[2], 1e-9);
+  assert.equal(JSON.stringify(fk), copie);
+  assert.equal(lifter(fk, 0), fk); // pas de décalage: même objet
 });

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ease, loopPhase, interpolatePose } from '../js/anim/pose-math.js';
+import { ease, loopPhase, interpolatePose, interpolateLift } from '../js/anim/pose-math.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const proche = (a, b, eps = 0.001) => assert.ok(Math.abs(a - b) <= eps, `${a} ≠ ${b}`);
@@ -52,4 +52,15 @@ test('interpolatePose: trois poses clés, passe par la pose du milieu', () => {
   ];
   proche(interpolatePose(poses, 0.5).coude_d[0], -100);
   proche(interpolatePose(poses, 0.25).coude_d[0], -50);
+});
+
+test('interpolateLift: 0 par défaut, interpolé entre les poses qui en ont un', () => {
+  const sans = [{ t: 0, joints: {} }, { t: 1, joints: {} }];
+  assert.equal(interpolateLift(sans, 0.5), 0);
+  const avec = [{ t: 0, joints: {}, lift: 0 }, { t: 1, joints: {}, lift: 0.45 }];
+  assert.equal(interpolateLift(avec, 0), 0);
+  assert.equal(interpolateLift(avec, 1), 0.45);
+  proche(interpolateLift(avec, 0.5), 0.225);
+  const mixte = [{ t: 0, joints: {} }, { t: 1, joints: {}, lift: 0.4 }];
+  proche(interpolateLift(mixte, 0.5), 0.2);
 });

@@ -65,3 +65,4 @@ Ruling: exercices "explosifs"/"sautés" animés comme leur version de base (dur�
 Ruling: variantes qui ne diffèrent que par la prise (supination, négatives, assistées) réutilisent les poses de base avec durée/muscles propres - cout: différence peu visible
 Engine: tests génériques appuis (chaque point d appui déclaré touche le sol/support dans chaque pose clé), decor banc/mur/table/poteau + decorPos
 Task A (toutes animations): poussée 9/9 et tirage 10/10 générés (ajustement numérique, tests de contact verts, planches-contact vérifiées). Ruling: pompes archer déclare appui main_g/pointes seulement (paume du bras tendu ~5 cm du sol) - cout: léger décollage visible. Anchor: option hauteur pour corps allongé (+test).
+Task A: jambes 13/13 générées. Engine: lift par pose (interpolateLift/lifter) pour monter sur banc (+tests).

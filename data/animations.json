@@ -2796,6 +2796,1285 @@
      }
     }
    ]
+  },
+  "squat": {
+   "duree": 2.8,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "pied"
+   },
+   "appuis": [
+    "pied_g",
+    "pied_d",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "ischios"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ],
+      "bassin": [
+       1.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -92,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -92,
+       0,
+       0
+      ],
+      "genou_g": [
+       116,
+       0,
+       0
+      ],
+      "genou_d": [
+       116,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -26,
+       0,
+       0
+      ],
+      "cheville_d": [
+       -26,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "squat-saute": {
+   "duree": 1.5,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "pied"
+   },
+   "appuis": [
+    "pied_g",
+    "pied_d",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "mollets"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ],
+      "bassin": [
+       1.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -92,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -92,
+       0,
+       0
+      ],
+      "genou_g": [
+       116,
+       0,
+       0
+      ],
+      "genou_d": [
+       116,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -26,
+       0,
+       0
+      ],
+      "cheville_d": [
+       -26,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "mollets": {
+   "duree": 2,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "pointe"
+   },
+   "appuis": [
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "mollets"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {}
+    },
+    {
+     "t": 1,
+     "joints": {
+      "cheville_g": [
+       50,
+       0,
+       0
+      ],
+      "cheville_d": [
+       50,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "fentes": {
+   "duree": 3,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "pointe"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "ischios"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "hanche_g": [
+       -35,
+       0,
+       0
+      ],
+      "hanche_d": [
+       27.5,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -2,
+       0,
+       0
+      ],
+      "genou_g": [
+       40,
+       0,
+       0
+      ],
+      "genou_d": [
+       24.5,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -3.5,
+       0,
+       0
+      ],
+      "cheville_d": [
+       5,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -1.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -75.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -10,
+       0,
+       0
+      ],
+      "genou_g": [
+       91,
+       0,
+       0
+      ],
+      "genou_d": [
+       104,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -13.5,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "fentes-marchees": {
+   "duree": 3.4,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "pointe"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "ischios"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "hanche_g": [
+       -35,
+       0,
+       0
+      ],
+      "hanche_d": [
+       27.5,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -2,
+       0,
+       0
+      ],
+      "genou_g": [
+       40,
+       0,
+       0
+      ],
+      "genou_d": [
+       24.5,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -3.5,
+       0,
+       0
+      ],
+      "cheville_d": [
+       5,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -1.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -75.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -10,
+       0,
+       0
+      ],
+      "genou_g": [
+       91,
+       0,
+       0
+      ],
+      "genou_d": [
+       104,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -13.5,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "fentes-sautees": {
+   "duree": 1.6,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "pointe"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "mollets"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "hanche_g": [
+       -35,
+       0,
+       0
+      ],
+      "hanche_d": [
+       27.5,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -2,
+       0,
+       0
+      ],
+      "genou_g": [
+       40,
+       0,
+       0
+      ],
+      "genou_d": [
+       24.5,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -3.5,
+       0,
+       0
+      ],
+      "cheville_d": [
+       5,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -1.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -75.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -10,
+       0,
+       0
+      ],
+      "genou_g": [
+       91,
+       0,
+       0
+      ],
+      "genou_d": [
+       104,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -13.5,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "squat-bulgare": {
+   "duree": 3.2,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "banc",
+   "decorPos": [
+    0,
+    -0.62
+   ],
+   "ancrage": {
+    "type": "sol",
+    "appui": "pointe"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g",
+    {
+     "p": "pointe_d",
+     "y": 0.45
+    }
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -2.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       34.5,
+       0,
+       0
+      ],
+      "genou_g": [
+       3,
+       0,
+       0
+      ],
+      "genou_d": [
+       56,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -0.5,
+       0,
+       0
+      ],
+      "cheville_d": [
+       32,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "bassin": [
+       -3.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -74,
+       0,
+       0
+      ],
+      "hanche_d": [
+       1.5,
+       0,
+       0
+      ],
+      "genou_g": [
+       88,
+       0,
+       0
+      ],
+      "genou_d": [
+       138,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -10.5,
+       0,
+       0
+      ],
+      "cheville_d": [
+       20.5,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "pistol-squat": {
+   "duree": 4,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "mollets"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -70,
+       0,
+       0
+      ],
+      "genou_d": [
+       10,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ],
+      "genou_d": [
+       4,
+       0,
+       0
+      ],
+      "bassin": [
+       2.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -98,
+       0,
+       0
+      ],
+      "genou_g": [
+       119.5,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -23.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -101,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "pistol-assiste": {
+   "duree": 4.4,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers",
+    "mollets"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -70,
+       0,
+       0
+      ],
+      "genou_d": [
+       10,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -85,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -85,
+       0,
+       0
+      ],
+      "genou_d": [
+       4,
+       0,
+       0
+      ],
+      "bassin": [
+       2.5,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -98,
+       0,
+       0
+      ],
+      "genou_g": [
+       119.5,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -23.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -101,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "montees-banc": {
+   "duree": 3,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "banc",
+   "decorPos": [
+    0,
+    0.22
+   ],
+   "ancrage": {
+    "type": "sol"
+   },
+   "appuis": [
+    {
+     "p": "pied_g",
+     "y": 0.45
+    },
+    {
+     "p": "pointe_g",
+     "y": 0.45
+    }
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -83.5,
+       0,
+       0
+      ],
+      "genou_g": [
+       119,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -35.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -19.5,
+       0,
+       0
+      ],
+      "genou_d": [
+       19.5,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -85,
+       0,
+       0
+      ],
+      "genou_d": [
+       95,
+       0,
+       0
+      ]
+     },
+     "lift": 0.45
+    }
+   ]
+  },
+  "squat-mur": {
+   "duree": 3,
+   "mode": "tenue",
+   "vue": "profil",
+   "decor": "mur",
+   "decorPos": [
+    0,
+    -0.47
+   ],
+   "ancrage": {
+    "type": "sol",
+    "appui": "pied"
+   },
+   "appuis": [
+    "pied_g",
+    "pied_d",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "quadriceps",
+    "fessiers"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "epaule_g": [
+       -10,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -10,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -86,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -86,
+       0,
+       0
+      ],
+      "genou_g": [
+       90,
+       0,
+       0
+      ],
+      "genou_d": [
+       90,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -4,
+       0,
+       0
+      ],
+      "cheville_d": [
+       -4,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "epaule_g": [
+       -10,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -10,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -86,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -86,
+       0,
+       0
+      ],
+      "genou_g": [
+       90,
+       0,
+       0
+      ],
+      "genou_d": [
+       90,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -4,
+       0,
+       0
+      ],
+      "cheville_d": [
+       -4,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "pont-fessier": {
+   "duree": 3,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol"
+   },
+   "appuis": [
+    "pied_g",
+    "pied_d",
+    "pointe_g",
+    "pointe_d"
+   ],
+   "muscles": [
+    "fessiers",
+    "ischios"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       -90,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -50,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -50,
+       0,
+       0
+      ],
+      "genou_g": [
+       113,
+       0,
+       0
+      ],
+      "genou_d": [
+       113,
+       0,
+       0
+      ],
+      "cheville_g": [
+       27,
+       0,
+       0
+      ],
+      "cheville_d": [
+       27,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       -105,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -25.5,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -25.5,
+       0,
+       0
+      ],
+      "genou_g": [
+       126.5,
+       0,
+       0
+      ],
+      "genou_d": [
+       127,
+       0,
+       0
+      ],
+      "cheville_g": [
+       4,
+       0,
+       0
+      ],
+      "cheville_d": [
+       4,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "pont-fessier-une-jambe": {
+   "duree": 3,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol"
+   },
+   "appuis": [
+    "pied_g",
+    "pointe_g"
+   ],
+   "muscles": [
+    "fessiers",
+    "ischios"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       -90,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -50,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -50,
+       0,
+       0
+      ],
+      "genou_g": [
+       113,
+       0,
+       0
+      ],
+      "genou_d": [
+       113,
+       0,
+       0
+      ],
+      "cheville_g": [
+       27,
+       0,
+       0
+      ],
+      "cheville_d": [
+       27,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       -106,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -22,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -42.5,
+       0,
+       0
+      ],
+      "genou_g": [
+       134,
+       0,
+       0
+      ],
+      "genou_d": [
+       74,
+       0,
+       0
+      ],
+      "cheville_g": [
+       -6,
+       0,
+       0
+      ],
+      "cheville_d": [
+       -6,
+       0,
+       0
+      ]
+     }
+    }
+   ]
   }
  }
 }

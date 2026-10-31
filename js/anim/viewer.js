@@ -2,8 +2,8 @@
 // three.js n'est chargé que si une animation est réellement affichée.
 import { illustration } from '../illustrations.js';
 import { computeFK, LIBELLES_MUSCLES } from './skeleton.js';
-import { ancrer } from './anchor.js';
-import { interpolatePose, loopPhase } from './pose-math.js';
+import { ancrer, lifter } from './anchor.js';
+import { interpolatePose, interpolateLift, loopPhase } from './pose-math.js';
 import {
   VUES, creerLecteur, avancer, basculerPause, basculerRalenti, vueSuivante, webglDisponible, choisirRendu,
 } from './controller.js';
@@ -58,7 +58,7 @@ function cadrage(animation) {
   const mini = [Infinity, Infinity, Infinity];
   const maxi = [-Infinity, -Infinity, -Infinity];
   for (let i = 0; i <= 10; i++) {
-    const fk = ancrer(computeFK(interpolatePose(animation.poses, i / 10)), animation.ancrage);
+    const fk = lifter(ancrer(computeFK(interpolatePose(animation.poses, i / 10)), animation.ancrage), interpolateLift(animation.poses, i / 10));
     for (const n of Object.values(fk)) for (let k = 0; k < 3; k++) { mini[k] = Math.min(mini[k], n.pos[k]); maxi[k] = Math.max(maxi[k], n.pos[k]); }
   }
   if (animation.decor === 'barre-fixe') maxi[1] = Math.max(maxi[1], 2.3);
@@ -140,7 +140,8 @@ async function animer(zone, exercice, animation, rendu, doc) {
     btnVue.textContent = `Vue : ${NOMS_VUES[lecteur.vue]}`;
   };
   const dessiner = () => {
-    const fk = ancrer(computeFK(jointsA(animation, lecteur)), animation.ancrage);
+    const phase = loopPhase(lecteur.elapsed, animation.duree, animation.mode);
+    const fk = lifter(ancrer(computeFK(jointsA(animation, lecteur)), animation.ancrage), interpolateLift(animation.poses, phase));
     mannequin.miseAJour(fk, animation.muscles);
     renderer.render(scene, camera);
   };
