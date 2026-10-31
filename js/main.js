@@ -1,5 +1,6 @@
 import { openStore } from './storage.js';
 import { gestionnaire } from './anim/viewer.js';
+import { chargerFacultatif } from './chargement.js';
 
 const VUES = ['aujourdhui', 'seance', 'figures', 'exercices', 'progres', 'depart'];
 const racine = document.getElementById('vue');
@@ -37,7 +38,8 @@ async function charger(f) {
 
 async function boot() {
   try {
-    const [exercices, programme, figures, animations] = await Promise.all(['exercices', 'programme', 'figures', 'animations'].map(charger));
+    const [exercices, programme, figures] = await Promise.all(['exercices', 'programme', 'figures'].map(charger));
+    const animations = await chargerFacultatif(fetch, 'data/animations.json'); // facultatif: sans lui, les dessins s'affichent
     ctx.data = { exercices, programme, figures, animations };
     const { store, persistant } = await openStore();
     ctx.store = store;

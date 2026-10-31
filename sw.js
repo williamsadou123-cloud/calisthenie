@@ -1,4 +1,4 @@
-const CACHE_NAME = 'calisthenie-v2';
+const CACHE_NAME = 'calisthenie-v3';
 const ASSETS = [
   './',
   'index.html',
@@ -20,6 +20,7 @@ const ASSETS = [
   'js/anim/mannequin.js',
   'js/anim/decor.js',
   'js/anim/viewer.js',
+  'js/chargement.js',
   'vendor/three/three.module.min.js',
   'js/views/aujourdhui.js',
   'js/views/seance.js',

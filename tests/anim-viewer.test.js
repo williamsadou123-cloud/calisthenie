@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { creerGestionnaire, montrerAnimation, gestionnaire } from '../js/anim/viewer.js';
+import { creerGestionnaire, montrerAnimation, gestionnaire, zoneAttachee } from '../js/anim/viewer.js';
 
 const sansWebgl = { createElement: () => ({ getContext: () => null }) };
 const exercice = { id: 'pompes', illustration: 'pompe' };
@@ -68,4 +68,22 @@ test('chargement tardif: un rendu lancé puis dépassé par un autre est détrui
   assert.equal(lent.n, 1, 'le rendu tardif doit être détruit');
   assert.match(recent.innerHTML, /<svg/, 'le rendu récent reste affiché');
   gestionnaire.detruire();
+});
+
+test('détruire pendant le chargement de three.js: le rendu qui arrive ensuite est détruit, pas enregistré', async () => {
+  const avecWebgl = { createElement: () => ({ getContext: () => ({}) }) };
+  let finir;
+  const lent = compteur();
+  const animerLent = () => new Promise((ok) => { finir = () => ok(lent); });
+  const p = montrerAnimation({ innerHTML: '' }, exercice, dataAvec, { doc: avecWebgl, reduireMouvement: false, animer: animerLent });
+  gestionnaire.detruire(); // l'utilisateur change d'écran pendant le chargement
+  finir();
+  await p;
+  assert.equal(lent.n, 1, 'le rendu tardif doit être détruit');
+});
+
+test('zoneAttachee: faux seulement quand la zone est sortie de la page', () => {
+  assert.equal(zoneAttachee({ isConnected: true }), true);
+  assert.equal(zoneAttachee({ isConnected: false }), false);
+  assert.equal(zoneAttachee({ innerHTML: '' }), true); // objet de test sans DOM
 });

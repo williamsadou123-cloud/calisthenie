@@ -24,7 +24,17 @@ export function creerGestionnaire() {
   };
 }
 
-export const gestionnaire = creerGestionnaire();
+let generation = 0; // chaque appel ou chaque destruction invalide les chargements plus anciens encore en cours
+
+export const gestionnaire = (() => {
+  const g = creerGestionnaire();
+  const detruire = g.detruire;
+  g.detruire = () => { generation++; detruire(); };
+  return g;
+})();
+
+// Faux seulement quand la zone d'affichage a été retirée de la page (on a quitté l'écran).
+export const zoneAttachee = (zone) => zone.isConnected !== false;
 
 const NOMS_VUES = { profil: 'profil', face: 'face', 'trois-quarts': '3/4', dessus: 'dessus' };
 
@@ -63,6 +73,8 @@ async function animer(zone, exercice, animation, rendu, doc) {
     import('./mannequin.js'),
     import('./decor.js'),
   ]);
+
+  if (!zoneAttachee(zone)) return { destroy() {} }; // l'écran a changé pendant le chargement
 
   zone.innerHTML = `
     <div class="demo">
@@ -142,6 +154,7 @@ async function animer(zone, exercice, animation, rendu, doc) {
   };
   const boucle = (t) => {
     if (detruit) return;
+    if (!zoneAttachee(zone)) { handle.destroy(); return; }
     lecteur = avancer(lecteur, dernier ? t - dernier : 0);
     dernier = t;
     dessiner();
@@ -195,11 +208,9 @@ async function animer(zone, exercice, animation, rendu, doc) {
 }
 
 // zone: élément où afficher la démo. data: { animations: { exercices } }. env: injection pour les tests.
-let generation = 0; // chaque appel invalide les chargements plus anciens encore en cours
-
 export async function montrerAnimation(zone, exercice, data, env = {}) {
-  const moi = ++generation;
   gestionnaire.detruire();
+  const moi = ++generation;
   const doc = env.doc ?? globalThis.document;
   const animation = data?.animations?.exercices?.[exercice.id];
   const reduireMouvement = env.reduireMouvement

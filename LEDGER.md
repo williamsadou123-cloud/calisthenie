@@ -45,3 +45,16 @@ Task 6: Ruling: ajout d un garde de génération dans montrerAnimation (chargeme
 Task 6: complete (npm test -> 104/104 pass; rendu 3D à vérifier dans le navigateur, T7)
 Task 7: Ruling: banc de rendu temporaire (hors dépôt) pour juger les poses; corrections visuelles: mains horizontales aux barres (+test), extrémités non arrondies (rainures), libellés muscles accentués (+test), forceContextLoss, cadrage 1.0 - cout: aucun
 Task 7: complete (npm test -> 107/107 pass; navigateur: 5 poses vérifiées, boutons, rafale d écrans = 1 canvas, 375 px sans défilement; hors-ligne et SW NON testables dans le navigateur intégré, couverts seulement par le test ASSETS)
+Final review: relecteur indépendant (sous-agent, modèle opus) sur fa13c63..HEAD - 0 Critical, 3 Important, 9 Minor
+Final: fixed I-1 boucle 3D qui tourne après remplacement de l écran (repos de séance, retour à la liste) - test zoneAttachee RED->GREEN + vérifié navigateur (0 rAF), suite 111/111
+Final: fixed I-2 chargement lent puis sortie d écran laisse un rendu actif - test "détruire pendant le chargement" RED->GREEN, suite 111/111
+Final: fixed I-3 data/animations.json manquant ou cassé bloquait tout le démarrage - tests chargerFacultatif RED->GREEN, suite 111/111 (CACHE_NAME -> v3, js/chargement.js dans ASSETS)
+Final: minor (deferred): M-1 webglDisponible crée un canvas de test à chaque appel sans le libérer (tester seulement si animation, mettre en cache, loseContext)
+Final: minor (deferred): M-2 renderer non libéré si exception après sa création dans animer
+Final: minor (deferred): M-3 en pause la boucle redessine la même image à chaque frame
+Final: minor (deferred): M-4 aria-label des boutons Ralenti et Vue masquent le texte visible (WCAG 2.5.3)
+Final: minor (deferred): M-5 bouton Ralenti sans retour visuel (aria-pressed sans style)
+Final: minor (deferred): M-6 canvas sans alternative textuelle (role="img" + aria-label)
+Final: minor (deferred): M-7 main.js importe viewer.js statiquement (un module cassé bloquerait le démarrage)
+Final: minor (deferred): M-8 prefers-reduced-motion lu une seule fois à la création
+Final: minor (deferred): M-9 champ distance de VUES inutilisé (code mort)

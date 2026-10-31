@@ -37,6 +37,7 @@ test('tous les fichiers des animations (js/anim, vendor, données) sont dans ASS
     ...readdirSync(join(root, 'js', 'anim')).map((f) => `js/anim/${f}`),
     'vendor/three/three.module.min.js',
     'data/animations.json',
+    'js/chargement.js',
   ];
   for (const f of attendus) assert.ok(list.includes(f), `${f} absent de ASSETS`);
 });
