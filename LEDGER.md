@@ -37,4 +37,5 @@ Task 3: complete (npm test -> 75/75 pass)
 Task 4: Ruling: main = centre de la paume (0,10 m) et nouveau point doigts (0,19 m) pour poser les mains à plat; ancrage sol accepte appui:"main" (x,z fixes) pour que mains et pieds ne glissent pas entre les poses - cout: tests de planche/équilibre sur les doigts
 Task 4: Ruling: tests corpsDroit sur l axe cou-bassin-cheville (épaule gauche décalée de 0,19 m donnait 164°); poitrine < 0,30 m en bas des pompes (la poitrine est l articulation de colonne, pas le devant du torse; poses calculées avec mains et pointes au sol); menton = articulation tete - cout: aucun
 Task 4: Ruling: poses réglées par recherche numérique (banc d essai hors dépôt) pour garder mains/pieds plantés: pompes incliné 17,5° en haut, coude 64° en bas; tractions menton à 2,25 m; dips coude 85° - cout: à valider visuellement en T7
-Task 4: complete (npm test -> 91/91 pass)
+Task 4: complete (npm test -> 89/89 pass)
+Task 5: complete (npm test -> 97/97 pass)
