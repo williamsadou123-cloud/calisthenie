@@ -66,7 +66,7 @@ export function creerDecor(type, pos = [0, 0]) {
     for (const dx of [-0.6, 0.6]) for (const dz of [-0.32, 0.32]) boite(0.05, 0.71, 0.05, pos[0] + dx, 0.355, pos[1] + dz);
   }
   if (type === 'mur') {
-    const mur = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 2.8), new THREE.MeshStandardMaterial({ color: 0x3a4150, roughness: 0.9, side: THREE.DoubleSide }));
+    const mur = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 2.8), new THREE.MeshStandardMaterial({ color: 0x3a4150, roughness: 0.9, side: THREE.DoubleSide, transparent: true, opacity: 0.4, depthWrite: false }) // translucide: on voit le corps même quand le mur est devant la caméra);
     mur.position.set(pos[0], 1.4, pos[1]);
     mur.receiveShadow = true;
     groupe.add(mur);
