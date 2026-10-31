@@ -222,7 +222,8 @@ export async function montrerAnimation(zone, exercice, data, env = {}) {
   if (rendu !== 'svg') {
     try {
       handle = await (env.animer ?? animer)(zone, exercice, animation, rendu, doc);
-    } catch {
+    } catch (err) {
+      console.warn('Démo 3D indisponible, dessin affiché à la place :', err);
       afficherSvg(zone, exercice);
       handle = { destroy() {} };
     }

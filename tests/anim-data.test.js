@@ -209,3 +209,9 @@ test('poses intermédiaires: valeurs valides, rien sous le sol, taille raisonnab
     assert.ok(etendue <= 3.6, `${id}: pose démesurée (${etendue.toFixed(1)} m)`);
   }
 });
+
+test('chaque module de js/anim s\'importe sans erreur (syntaxe, imports)', async () => {
+  for (const f of readdirSync(join(root, 'js', 'anim')).filter((x) => x.endsWith('.js'))) {
+    await import(join(root, 'js', 'anim', f));
+  }
+});
