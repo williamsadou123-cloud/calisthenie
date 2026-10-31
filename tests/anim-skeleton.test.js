@@ -17,7 +17,7 @@ test('repos: taille de 1,75 m, mains le long du corps', () => {
   const bas = Math.min(...tousLesPoints(fk).map((p) => p[1]));
   proche(fk.sommet_tete.pos[1] - bas, 1.75, 0.03);
   proche(fk.main_g.pos[0], fk.epaule_g.pos[0], 0.001);
-  assert.ok(fk.main_g.pos[1] < fk.epaule_g.pos[1] - 0.7);
+  assert.ok(fk.main_g.pos[1] < fk.epaule_g.pos[1] - 0.65);
 });
 
 test('repos: symétrie gauche/droite', () => {

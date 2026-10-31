@@ -1,0 +1,459 @@
+{
+ "version": 1,
+ "exercices": {
+  "pompes": {
+   "duree": 2.4,
+   "mode": "boucle",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol",
+    "appui": "main"
+   },
+   "muscles": [
+    "pectoraux",
+    "triceps",
+    "epaules"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       72.5,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -72.5,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -72.5,
+       0,
+       0
+      ],
+      "poignet_g": [
+       -90,
+       0,
+       0
+      ],
+      "poignet_d": [
+       -90,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       84.75,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -16.75,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -16.75,
+       0,
+       0
+      ],
+      "coude_g": [
+       -116,
+       0,
+       0
+      ],
+      "coude_d": [
+       -116,
+       0,
+       0
+      ],
+      "poignet_g": [
+       -42,
+       0,
+       0
+      ],
+      "poignet_d": [
+       -42,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "tractions-pronation": {
+   "duree": 3,
+   "mode": "boucle",
+   "vue": "face",
+   "decor": "barre-fixe",
+   "ancrage": {
+    "type": "barre",
+    "y": 2.2,
+    "z": 0
+   },
+   "muscles": [
+    "dos",
+    "biceps"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       -6,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -174,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -174,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -6,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -6,
+       0,
+       0
+      ],
+      "genou_g": [
+       25,
+       0,
+       0
+      ],
+      "genou_d": [
+       25,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       -5,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -20,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -20,
+       0,
+       0
+      ],
+      "coude_g": [
+       -140,
+       0,
+       0
+      ],
+      "coude_d": [
+       -140,
+       0,
+       0
+      ],
+      "hanche_g": [
+       -6,
+       0,
+       0
+      ],
+      "hanche_d": [
+       -6,
+       0,
+       0
+      ],
+      "genou_g": [
+       25,
+       0,
+       0
+      ],
+      "genou_d": [
+       25,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "dips-barres": {
+   "duree": 2.8,
+   "mode": "boucle",
+   "vue": "trois-quarts",
+   "decor": "barres-paralleles",
+   "ancrage": {
+    "type": "barre",
+    "y": 1.15,
+    "z": 0
+   },
+   "muscles": [
+    "triceps",
+    "pectoraux",
+    "epaules"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       15,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -15,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -15,
+       0,
+       0
+      ],
+      "genou_g": [
+       55,
+       0,
+       0
+      ],
+      "genou_d": [
+       55,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       15,
+       0,
+       0
+      ],
+      "epaule_g": [
+       80,
+       0,
+       0
+      ],
+      "epaule_d": [
+       80,
+       0,
+       0
+      ],
+      "coude_g": [
+       -95,
+       0,
+       0
+      ],
+      "coude_d": [
+       -95,
+       0,
+       0
+      ],
+      "genou_g": [
+       55,
+       0,
+       0
+      ],
+      "genou_d": [
+       55,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "planche-gainage": {
+   "duree": 3,
+   "mode": "tenue",
+   "vue": "profil",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol"
+   },
+   "muscles": [
+    "abdominaux",
+    "epaules",
+    "fessiers"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       84,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -84,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -84,
+       0,
+       0
+      ],
+      "coude_g": [
+       -90,
+       0,
+       0
+      ],
+      "coude_d": [
+       -90,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       84,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -84,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -84,
+       0,
+       0
+      ],
+      "coude_g": [
+       -90,
+       0,
+       0
+      ],
+      "coude_d": [
+       -90,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  },
+  "handstand-libre": {
+   "duree": 3,
+   "mode": "tenue",
+   "vue": "face",
+   "decor": "sol",
+   "ancrage": {
+    "type": "sol"
+   },
+   "muscles": [
+    "epaules",
+    "triceps",
+    "abdominaux"
+   ],
+   "poses": [
+    {
+     "t": 0,
+     "joints": {
+      "bassin": [
+       180,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -180,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -180,
+       0,
+       0
+      ],
+      "poignet_g": [
+       90,
+       0,
+       0
+      ],
+      "poignet_d": [
+       90,
+       0,
+       0
+      ],
+      "cheville_g": [
+       60,
+       0,
+       0
+      ],
+      "cheville_d": [
+       60,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "t": 1,
+     "joints": {
+      "bassin": [
+       180,
+       0,
+       0
+      ],
+      "epaule_g": [
+       -180,
+       0,
+       0
+      ],
+      "epaule_d": [
+       -180,
+       0,
+       0
+      ],
+      "poignet_g": [
+       90,
+       0,
+       0
+      ],
+      "poignet_d": [
+       90,
+       0,
+       0
+      ],
+      "cheville_g": [
+       60,
+       0,
+       0
+      ],
+      "cheville_d": [
+       60,
+       0,
+       0
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

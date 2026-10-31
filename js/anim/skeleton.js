@@ -18,7 +18,7 @@ export const ZONES_MUSCLES = [
 export const PROPORTIONS = {
   abdomen: 0.21, poitrine: 0.26, cou: 0.10, tete: 0.23,
   demiEpaules: 0.19, hauteurEpaule: 0.24, demiBassin: 0.10,
-  bras: 0.32, avantBras: 0.27, main: 0.19,
+  bras: 0.32, avantBras: 0.27, main: 0.10, doigts: 0.19, // main = centre de la paume, doigts = bout de la main
   cuisse: 0.45, tibia: 0.42, cheville: 0.08, piedAvant: 0.17, piedArriere: 0.08,
 };
 
@@ -73,6 +73,7 @@ export function computeFK(joints) {
     noeud(`coude_${c}`, `epaule_${c}`, [0, -P.bras, 0]);
     noeud(`poignet_${c}`, `coude_${c}`, [0, -P.avantBras, 0]);
     point(`main_${c}`, `poignet_${c}`, [0, -P.main, 0]);
+    point(`doigts_${c}`, `poignet_${c}`, [0, -P.doigts, 0]);
 
     noeud(`hanche_${c}`, 'bassin', [s * P.demiBassin, 0, 0]);
     noeud(`genou_${c}`, `hanche_${c}`, [0, -P.cuisse, 0]);

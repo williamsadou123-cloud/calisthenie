@@ -20,12 +20,12 @@ test('planche au sol: seul y change, x et z restent', () => {
     proche(fk[n].pos[0], brut[n].pos[0], 1e-9);
     proche(fk[n].pos[2], brut[n].pos[2], 1e-9);
   }
-  proche(fk.main_g.pos[1], 0, 0.02); // les mains touchent le sol, bras tendus
+  proche(fk.doigts_g.pos[1], 0, 0.02); // le bout des doigts touche le sol, bras tendus
 });
 
 test('équilibre sur les mains: mains au sol, pieds en haut', () => {
   const fk = ancrer(computeFK({ bassin: [180, 0, 0], epaule_g: [-180, 0, 0], epaule_d: [-180, 0, 0] }), { type: 'sol' });
-  assert.ok(fk.main_g.pos[1] < 0.02 && fk.main_d.pos[1] < 0.02);
+  assert.ok(fk.doigts_g.pos[1] < 0.02 && fk.doigts_d.pos[1] < 0.02);
   assert.ok(fk.pied_g.pos[1] > 1.4);
 });
 
@@ -35,6 +35,16 @@ test('suspendu à la barre: les mains sont sur la barre, les pieds dans le vide'
   proche((fk.main_g.pos[1] + fk.main_d.pos[1]) / 2, 2.2);
   proche((fk.main_g.pos[2] + fk.main_d.pos[2]) / 2, 0);
   assert.ok(fk.pied_g.pos[1] < 2.2 - 1.5);
+});
+
+test('sol avec appui sur les mains: mains fixes en x/z d\'une pose à l\'autre', () => {
+  const haut = ancrer(computeFK({ bassin: [70, 0, 0], epaule_g: [-70, 0, 0], epaule_d: [-70, 0, 0] }), { type: 'sol', appui: 'main' });
+  const bas = ancrer(computeFK({ bassin: [85, 0, 0], epaule_g: [-10, 0, 0], epaule_d: [-10, 0, 0] }), { type: 'sol', appui: 'main' });
+  for (const fk of [haut, bas]) {
+    proche((fk.main_g.pos[0] + fk.main_d.pos[0]) / 2, 0);
+    proche((fk.main_g.pos[2] + fk.main_d.pos[2]) / 2, 0);
+    proche(Math.min(...ys(fk)), 0);
+  }
 });
 
 test('ancrer ne modifie pas l\'objet d\'entrée', () => {

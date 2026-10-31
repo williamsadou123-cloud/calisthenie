@@ -6,7 +6,8 @@ function decale(fk, d) {
   return out;
 }
 
-// ancrage: { type: 'sol' } | { type: 'barre', y, z }
+// ancrage: { type: 'sol', appui?: 'main' | 'pointe' | ... } | { type: 'barre', y, z }
+// `appui` fixe aussi x et z: le milieu des deux points `<appui>_g` / `<appui>_d` est placé en (0, 0).
 export function ancrer(fk, ancrage) {
   if (ancrage.type === 'barre') {
     const g = fk.main_g.pos;
@@ -14,5 +15,10 @@ export function ancrer(fk, ancrage) {
     return decale(fk, [-(g[0] + d[0]) / 2, ancrage.y - (g[1] + d[1]) / 2, ancrage.z - (g[2] + d[2]) / 2]);
   }
   const bas = Math.min(...Object.values(fk).map((n) => n.pos[1]));
+  if (ancrage.appui) {
+    const g = fk[`${ancrage.appui}_g`].pos;
+    const d = fk[`${ancrage.appui}_d`].pos;
+    return decale(fk, [-(g[0] + d[0]) / 2, -bas, -(g[2] + d[2]) / 2]);
+  }
   return decale(fk, [0, -bas, 0]);
 }

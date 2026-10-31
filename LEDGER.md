@@ -33,3 +33,8 @@ Task 1: complete (npm test -> 60/60 pass)
 Task 2: Ruling: bassin +90 (et non -90 comme dans le plan) incline le corps vers l avant face au sol; genou fléchi = rx positif, coude/hanche fléchis = rx négatif - cout: les poses de T4 suivent ces signes
 Task 2: Ruling: proportions ajustées (abdomen .21, poitrine .26, tete .23) pour une taille exacte de 1,75 m; articulations _d en miroir (ry,rz inversés) pour que mêmes angles = pose symétrique - cout: aucun
 Task 2: complete (npm test -> 70/70 pass)
+Task 3: complete (npm test -> 75/75 pass)
+Task 4: Ruling: main = centre de la paume (0,10 m) et nouveau point doigts (0,19 m) pour poser les mains à plat; ancrage sol accepte appui:"main" (x,z fixes) pour que mains et pieds ne glissent pas entre les poses - cout: tests de planche/équilibre sur les doigts
+Task 4: Ruling: tests corpsDroit sur l axe cou-bassin-cheville (épaule gauche décalée de 0,19 m donnait 164°); poitrine < 0,30 m en bas des pompes (la poitrine est l articulation de colonne, pas le devant du torse; poses calculées avec mains et pointes au sol); menton = articulation tete - cout: aucun
+Task 4: Ruling: poses réglées par recherche numérique (banc d essai hors dépôt) pour garder mains/pieds plantés: pompes incliné 17,5° en haut, coude 64° en bas; tractions menton à 2,25 m; dips coude 85° - cout: à valider visuellement en T7
+Task 4: complete (npm test -> 91/91 pass)
