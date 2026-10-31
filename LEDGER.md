@@ -66,3 +66,4 @@ Ruling: variantes qui ne diffèrent que par la prise (supination, négatives, as
 Engine: tests génériques appuis (chaque point d appui déclaré touche le sol/support dans chaque pose clé), decor banc/mur/table/poteau + decorPos
 Task A (toutes animations): poussée 9/9 et tirage 10/10 générés (ajustement numérique, tests de contact verts, planches-contact vérifiées). Ruling: pompes archer déclare appui main_g/pointes seulement (paume du bras tendu ~5 cm du sol) - cout: léger décollage visible. Anchor: option hauteur pour corps allongé (+test).
 Task A: jambes 13/13 générées. Engine: lift par pose (interpolateLift/lifter) pour monter sur banc (+tests).
+Task A: gainage 7/7. Ruling: L-sit au sol, hanches ~14 cm du sol (géométrie des proportions); gainage latéral hanches un peu basses (incliné ~15°) - cout: rendu moins net. Engine: ancrage sol appui sur un seul point (ex. main_g).

@@ -54,6 +54,17 @@ test('sol avec hauteur: un corps allongé repose à l\'épaisseur demandée, san
   proche(Math.min(...ys(avecAppui)), 0.11);
 });
 
+test('sol avec appui sur un seul point (main_g): ce point reste fixe en x/z, l\'autre main peut bouger', () => {
+  const a = ancrer(computeFK({ bassin: [90, 0, 0], epaule_both: [-90, 0, 0], epaule_d: [-180, 0, 0] }), { type: 'sol', appui: 'main_g' });
+  const b = ancrer(computeFK({ bassin: [80, 0, 0], epaule_both: [-80, 0, 0] }), { type: 'sol', appui: 'main_g' });
+  for (const fk of [a, b]) {
+    proche(fk.main_g.pos[0], 0);
+    proche(fk.main_g.pos[2], 0);
+    proche(Math.min(...ys(fk)), 0);
+  }
+  assert.ok(Math.abs(a.main_d.pos[2] - b.main_d.pos[2]) > 0.1); // l'autre main n'est pas bloquée
+});
+
 test('ancrer ne modifie pas l\'objet d\'entrée', () => {
   const brut = computeFK({ bassin: [90, 0, 0] });
   const copie = JSON.stringify(brut);
