@@ -41,11 +41,13 @@ export async function render(root, ctx) {
         <button id="export">Exporter ma sauvegarde</button>
         <label class="bouton" for="fichier" style="text-align:center;margin:0">Importer une sauvegarde</label>
         <input id="fichier" type="file" accept=".json,application/json" hidden>
+        <button id="retest">Refaire le test de départ</button>
       </div>
       <p id="msg" class="doux" aria-live="polite"></p>
     </div>`;
 
   const msg = root.querySelector('#msg');
+  root.querySelector('#retest').addEventListener('click', () => window.app.showView('depart'));
   root.querySelector('#export').addEventListener('click', async () => {
     const texte = await exportAll(ctx.store);
     const url = URL.createObjectURL(new Blob([texte], { type: 'application/json' }));

@@ -146,7 +146,10 @@ function draw(root, ctx) {
   if (step.type === 'tenue') {
     const chronoEl = root.querySelector('#chrono');
     const btn = root.querySelector('#chronoBtn');
-    const maj = () => { chronoEl.textContent = formatSeconds((Date.now() - run.chronoDebut) / 1000); };
+    const maj = () => {
+      if (!chronoEl.isConnected) { stopTick(); return; } // écran quitté : le chrono continue via chronoDebut
+      chronoEl.textContent = formatSeconds((Date.now() - run.chronoDebut) / 1000);
+    };
     if (run.chronoDebut) { btn.textContent = 'Arrêter le chrono'; tick = setInterval(maj, 250); maj(); }
     btn.addEventListener('click', () => {
       unlockAudio();
@@ -201,7 +204,12 @@ function drawRepos(root, ctx, step, par) {
   tick = setInterval(() => {
     const r = restRemaining(run.restEnd, Date.now());
     const el = root.querySelector('#reste');
-    if (el) el.textContent = formatSeconds(r);
+    if (!el) {
+      // L'utilisateur est sur un autre onglet : on prévient sans toucher à l'écran affiché.
+      if (r <= 0) { beep(); vibrate(300); run.restEnd = null; stopTick(); }
+      return;
+    }
+    el.textContent = formatSeconds(r);
     if (r <= 0) { beep(); vibrate(300); fin(); }
   }, 250);
   root.querySelector('#passer').addEventListener('click', fin);

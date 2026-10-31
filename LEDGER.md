@@ -20,3 +20,7 @@ Task 7: Ruling: clés d illustration chandelle et wall-walk ajoutées (au lieu d
 Final minor candidate: silhouettes SVG très simples (handstand, drapeau, muscle-up approximatifs)
 Task 8: complete (navigateur: palier refusé à 9 s / validé à 10 s et suivant débloqué, import corrompu refusé sans effacer, export→import restaure; npm test 55/55)
 Task 8: Ruling: service worker passé de cache-seul à cache d abord + revalidation en arrière-plan avec message "Recharger" (spec: mise à jour à la réouverture avec réseau) — coût: une version mixte possible pendant une session si une mise à jour tombe en cours
+Task 9: complete (hors-ligne vérifié serveur arrêté: rechargement, exercices, figures, séance; audit 375 px: pas de défilement horizontal; npm test 55/55)
+Task 9: Ruling: README ajoute la consigne "changer CACHE_NAME à chaque mise à jour" car la revalidation en arrière-plan ne rafraîchit que les fichiers rouverts — coût: un oubli laisse d anciens fichiers jusqu à la 2e ouverture
+Final: bug trouvé en auto-relecture: fin de repos sur un autre onglet écrasait l écran — corrigé (tick sans écran affiché), vérifié navigateur ; ajout bouton Refaire le test de départ
+Final review: self-review (aucun sous-agent lancé)
