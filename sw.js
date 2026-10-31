@@ -39,15 +39,32 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+async function prevenirMiseAJour() {
+  for (const c of await self.clients.matchAll()) c.postMessage({ type: 'maj' });
+}
+
+// Cache d'abord (fonctionne sans réseau), puis mise à jour en arrière-plan quand le réseau répond.
 self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') return;
-  event.respondWith(
-    caches.match(event.request).then((hit) => {
-      if (hit) return hit;
-      return fetch(event.request).catch(() => {
-        if (event.request.mode === 'navigate') return caches.match('index.html');
-        return Response.error();
-      });
-    }),
-  );
+  const req = event.request;
+  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    const hit = await cache.match(req);
+    const reseau = fetch(req)
+      .then(async (res) => {
+        if (res.ok) {
+          const avant = hit && (hit.headers.get('etag') || hit.headers.get('last-modified'));
+          const apres = res.headers.get('etag') || res.headers.get('last-modified');
+          await cache.put(req, res.clone());
+          if (hit && avant !== apres) await prevenirMiseAJour();
+        }
+        return res;
+      })
+      .catch(() => null);
+    if (hit) { event.waitUntil(reseau); return hit; }
+    const res = await reseau;
+    if (res) return res;
+    if (req.mode === 'navigate') return (await cache.match('index.html')) || Response.error();
+    return Response.error();
+  })());
 });

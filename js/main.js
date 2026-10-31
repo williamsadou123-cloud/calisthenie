@@ -52,8 +52,19 @@ async function boot() {
   }
 }
 
+function proposerRechargement() {
+  if (document.getElementById('maj')) return;
+  const d = document.createElement('div');
+  d.id = 'maj';
+  d.className = 'bandeau';
+  d.innerHTML = 'Une mise à jour est disponible. <button class="petit" id="recharger">Recharger</button>';
+  document.body.prepend(d);
+  d.querySelector('#recharger').addEventListener('click', () => location.reload());
+}
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
+  navigator.serviceWorker.addEventListener('message', (e) => { if (e.data?.type === 'maj') proposerRechargement(); });
 }
 
 boot();

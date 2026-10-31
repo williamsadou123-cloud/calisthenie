@@ -18,3 +18,5 @@ Task 7: complete (npm test 55/55; navigateur: recherche, filtres, fiche, liens p
 Task 7: Ruling: filtre "muscle" = famille (groupe) + recherche texte sur les muscles ciblés — coût: pas de liste de muscles fins
 Task 7: Ruling: clés d illustration chandelle et wall-walk ajoutées (au lieu de réutiliser mur) — coût: aucun
 Final minor candidate: silhouettes SVG très simples (handstand, drapeau, muscle-up approximatifs)
+Task 8: complete (navigateur: palier refusé à 9 s / validé à 10 s et suivant débloqué, import corrompu refusé sans effacer, export→import restaure; npm test 55/55)
+Task 8: Ruling: service worker passé de cache-seul à cache d abord + revalidation en arrière-plan avec message "Recharger" (spec: mise à jour à la réouverture avec réseau) — coût: une version mixte possible pendant une session si une mise à jour tombe en cours
