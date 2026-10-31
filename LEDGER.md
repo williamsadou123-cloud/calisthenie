@@ -68,3 +68,5 @@ Task A (toutes animations): poussée 9/9 et tirage 10/10 générés (ajustement 
 Task A: jambes 13/13 générées. Engine: lift par pose (interpolateLift/lifter) pour monter sur banc (+tests).
 Task A: gainage 7/7. Ruling: L-sit au sol, hanches ~14 cm du sol (géométrie des proportions); gainage latéral hanches un peu basses (incliné ~15°) - cout: rendu moins net. Engine: ancrage sol appui sur un seul point (ex. main_g).
 Task A: équilibre 6/6. Ruling: mur translucide (opacité 0,4) pour voir le corps quelle que soit la vue.
+Task A: figures 13/13 (+ tractions-poitrine dans tirage). Ruling: angle limite des poses portée à +-360 (compensation de poignet); test mains horizontales limité aux barres horizontales (poteau = prise verticale).
+Task A: mobilité 10/10 -> 74/74 exercices animés. Ruling: chat-vache déclare seulement les mains en appui (genoux ~10 cm en dos rond); tractions australiennes et rowing: 5 poses continues (±28° autour de la précédente) pour ne jamais passer sous le sol. Test permanent des poses intermédiaires (NaN, sous le sol, taille). CACHE_NAME -> v4.

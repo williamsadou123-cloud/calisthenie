@@ -65,11 +65,12 @@ Les fiches d'exercices et la séance montrent un mannequin 3D qui fait le mouvem
 Il est construit en code (aucune vidéo, aucun modèle externe) avec three.js (`vendor/three/`, licence MIT).
 Si l'exercice n'a pas d'animation, ou si le téléphone ne gère pas WebGL, l'ancien dessin s'affiche. Avec « réduire les animations » activé, une pose fixe s'affiche.
 
-Pour l'instant 5 exercices sont animés : pompes classiques, tractions (prise pronation), dips aux barres, planche gainage, équilibre sur les mains libre.
+Les 74 exercices sont animés (poussée, tirage, jambes, gainage, équilibre, figures, mobilité). Les variantes qui ne diffèrent que par la vitesse ou la prise (pompes explosives, tractions négatives/supination/explosives, squat sauté, fentes marchées/sautées, pistol assisté) réutilisent les poses de l'exercice de base, sans phase aérienne.
+Limites connues : gainage latéral et L-sit un peu bas (hanches proches du sol), pompes archer (paume du bras tendu à ~5 cm du sol), chat-vache (genoux à ~10 cm du sol en dos rond).
 
 Ajouter une animation : ajouter l'id de l'exercice dans `data/animations.json` (durée, mode `boucle` ou `tenue`, vue, décor, ancrage, poses clés en degrés, muscles).
 Repères des angles : repère main droite, y vers le haut, z vers l'avant du personnage ; `bassin: [90,0,0]` couche le corps face au sol ; fléchir un genou = rx positif, fléchir un coude ou une hanche = rx négatif.
-`npm test` vérifie la géométrie de chaque pose des 5 exercices (bras tendus, mains au sol, tête au-dessus de la barre…). Après chaque changement, passe `CACHE_NAME` dans `sw.js` à `calisthenie-v3`, etc.
+`npm test` vérifie la géométrie de chaque pose des 5 exercices (bras tendus, mains au sol, tête au-dessus de la barre…). Après chaque changement, passe `CACHE_NAME` dans `sw.js` à `calisthenie-v5`, etc.
 
 ## Ce qui n'a pas pu être testé ici
 

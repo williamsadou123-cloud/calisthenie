@@ -1,4 +1,4 @@
-const CACHE_NAME = 'calisthenie-v3';
+const CACHE_NAME = 'calisthenie-v4';
 const ASSETS = [
   './',
   'index.html',

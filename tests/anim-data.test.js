@@ -186,3 +186,26 @@ test('poids ajouté par les animations < 1,2 Mo', () => {
   const total = taille(join(root, 'vendor', 'three')) + taille(join(root, 'js', 'anim')) + taille(join(root, 'data', 'animations.json'));
   assert.ok(total < 1_200_000, `${total} octets`);
 });
+
+test('tous les exercices de l\'appli ont une animation', () => {
+  const liste = Array.isArray(exercices) ? exercices : exercices.exercices;
+  const manquants = liste.filter((e) => !animations[e.id]).map((e) => e.id);
+  assert.deepEqual(manquants, [], `${manquants.length} exercice(s) sans animation`);
+});
+
+test('poses intermédiaires: valeurs valides, rien sous le sol, taille raisonnable (toutes les animations)', () => {
+  for (const [id, a] of Object.entries(animations)) {
+    let minY = Infinity;
+    let etendue = 0;
+    for (let i = 0; i <= 20; i++) {
+      const fk = posePlacee(a, i / 20);
+      for (const n of Object.values(fk)) {
+        assert.ok(n.pos.every(Number.isFinite), `${id} @${i / 20}: valeur invalide`);
+        minY = Math.min(minY, n.pos[1]);
+        etendue = Math.max(etendue, Math.hypot(...n.pos));
+      }
+    }
+    assert.ok(minY >= -0.05, `${id}: le corps traverse le sol (${minY.toFixed(2)} m)`);
+    assert.ok(etendue <= 3.6, `${id}: pose démesurée (${etendue.toFixed(1)} m)`);
+  }
+});
